@@ -1,0 +1,69 @@
+{
+    "success": true,
+    "message": "exporter agent health retrieved successfully",
+    "data": [
+        {
+            "delegateKey": "81a31e55afaf8b8b0eec5e37d57204b4b8cb9354844f28b5b2a3104fb7d4fcec",
+            "referenceName": "helios-agent",
+            "resourceType": "slurm_cluster",
+            "resourceConfigName": "helios",
+            "isHealthy": true,
+            "agents": [
+                {
+                    "name": "delegate",
+                    "displayName": "Delegate",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                },
+                {
+                    "name": "node_agents",
+                    "displayName": "Node Agents",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                }
+            ]
+        },
+        {
+            "delegateKey": "a929f42a97a81d4f2b1809a201f7d934565c550ea34a8aef011f2aa6ef1571fb",
+            "referenceName": "atlas-agent",
+            "resourceType": "kubernetes_cluster",
+            "resourceConfigName": "atlas",
+            "isHealthy": true,
+            "agents": [
+                {
+                    "name": "delegate",
+                    "displayName": "Delegate",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                },
+                {
+                    "name": "node_agents",
+                    "displayName": "Node Agents",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                }
+            ]
+        },
+        {
+            "delegateKey": "f2f674875cbc838036242b4a57be7deec0c97df33b9c413d4e28babe9ea41fde",
+            "referenceName": "orion-agent",
+            "resourceType": "kubernetes_cluster",
+            "resourceConfigName": "orion",
+            "isHealthy": true,
+            "agents": [
+                {
+                    "name": "delegate",
+                    "displayName": "Delegate",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                },
+                {
+                    "name": "node_agents",
+                    "displayName": "Node Agents",
+                    "status": "healthy",
+                    "lastSyncAt": 1794501605427
+                }
+            ]
+        }
+    ]
+}

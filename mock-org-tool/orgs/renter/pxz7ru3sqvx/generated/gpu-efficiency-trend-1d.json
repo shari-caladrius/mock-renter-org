@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "message": "GPU efficiency trend fetched successfully",
+    "data": {
+        "days": [
+            {
+                "date": "2026-11-12",
+                "avgFleetUtil": 36.4,
+                "idleCount": 32,
+                "underCount": 48,
+                "normalCount": 64,
+                "overCount": 16,
+                "totalDevices": 160
+            }
+        ],
+        "durationDays": 1
+    }
+}

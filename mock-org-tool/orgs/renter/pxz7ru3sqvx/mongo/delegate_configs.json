@@ -1,0 +1,248 @@
+[
+  {
+    "_id": {
+      "$oid": "ddf3ec1f99d7c4492ef6212d"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "orgSlug": "pxz7ru3sqvx",
+    "referenceName": "helios-agent",
+    "isHosted": true,
+    "delegateKey": "81a31e55afaf8b8b0eec5e37d57204b4b8cb9354844f28b5b2a3104fb7d4fcec",
+    "isDeleted": false,
+    "isDraft": false,
+    "isEnabled": true,
+    "isUpdateAvailable": false,
+    "installationExpiryTime": {
+      "$numberLong": "0"
+    },
+    "lifecycleExpiryTime": {
+      "$numberLong": "0"
+    },
+    "version": "",
+    "ConfigVersion": "",
+    "lastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "agenticLastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "tool": "CHRONOSCALE",
+    "resourceConfig": {
+      "id": "c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+      "name": "helios",
+      "region": "us-east-1",
+      "type": "slurm_cluster"
+    },
+    "nodeAgentConfigs": {
+      "topology_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "node_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "filesystem_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "rdma_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "dcgm_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "log_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      }
+    },
+    "createdAt": {
+      "$numberLong": "1779402540"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "bdf5ed153b6151ccf468e164"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "orgSlug": "pxz7ru3sqvx",
+    "referenceName": "atlas-agent",
+    "isHosted": true,
+    "delegateKey": "a929f42a97a81d4f2b1809a201f7d934565c550ea34a8aef011f2aa6ef1571fb",
+    "isDeleted": false,
+    "isDraft": false,
+    "isEnabled": true,
+    "isUpdateAvailable": false,
+    "installationExpiryTime": {
+      "$numberLong": "0"
+    },
+    "lifecycleExpiryTime": {
+      "$numberLong": "0"
+    },
+    "version": "",
+    "ConfigVersion": "",
+    "lastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "agenticLastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "tool": "CHRONOSCALE",
+    "resourceConfig": {
+      "id": "a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+      "name": "atlas",
+      "region": "us-east-1",
+      "type": "kubernetes_cluster"
+    },
+    "nodeAgentConfigs": {
+      "topology_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "node_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "filesystem_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "rdma_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "dcgm_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "log_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      }
+    },
+    "createdAt": {
+      "$numberLong": "1779263400"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "9c6c29140b3b11e256426e59"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "orgSlug": "pxz7ru3sqvx",
+    "referenceName": "orion-agent",
+    "isHosted": true,
+    "delegateKey": "f2f674875cbc838036242b4a57be7deec0c97df33b9c413d4e28babe9ea41fde",
+    "isDeleted": false,
+    "isDraft": false,
+    "isEnabled": true,
+    "isUpdateAvailable": false,
+    "installationExpiryTime": {
+      "$numberLong": "0"
+    },
+    "lifecycleExpiryTime": {
+      "$numberLong": "0"
+    },
+    "version": "",
+    "ConfigVersion": "",
+    "lastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "agenticLastSyncAt": {
+      "$numberLong": "1794501603"
+    },
+    "tool": "CHRONOSCALE",
+    "resourceConfig": {
+      "id": "8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+      "name": "orion",
+      "region": "us-east-1",
+      "type": "kubernetes_cluster"
+    },
+    "nodeAgentConfigs": {
+      "topology_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "node_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "filesystem_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "rdma_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "dcgm_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      },
+      "log_exporter": {
+        "lastSyncAt": {
+          "$numberLong": "1794501605427"
+        },
+        "enabled": true
+      }
+    },
+    "createdAt": {
+      "$numberLong": "1781761140"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  }
+]

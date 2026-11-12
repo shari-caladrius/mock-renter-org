@@ -1,0 +1,26 @@
+{
+  "_comment": "Starting point for a new renter org. Replace orgName / orgId / orgSlug and the database with the values of the new org. Pass the connection string with MONGO_URI, --uri or .env, never in this file.",
+  "org": {
+    "orgName": "acme-labs.example.com",
+    "orgSlug": "<ORG-SLUG>",
+    "orgId": "<ORG-ID-OF-THE-NEW-ORG>",
+    "region": "us-east-1"
+  },
+  "mongo": { "database": "<DATABASE-OF-THE-NEW-ORG>" },
+  "seed": 11,
+  "snapshot": "now",
+  "gpu": "H200",
+  "gpuMetrics": {
+    "temperatureC":  { "idle": [28, 38], "busy": [40, 83] },
+    "memoryUsedPct": { "busy": [45, 90] }
+  },
+  "workloadsPerCluster": { "TRAINING_JOB": [0, 3], "INFERENCE_SERVICE": [5, 8] },
+  "clusters": [
+    { "name": "helios", "kind": "slurm", "nodes": 8, "gpu": "B300",
+      "workloads": { "TRAINING_JOB": [2, 3], "INFERENCE_SERVICE": [1, 2] } },
+    { "name": "atlas",  "kind": "k8s",   "nodes": [10, 12], "gpu": "GB200" },
+    { "name": "orion",  "kind": "k8s",   "nodes": 6 }
+  ],
+  "bandPct": { "idle": 20, "under": 30, "normal": 40, "over": 10 },
+  "storage": { "fleetTargetPct": 46.0, "fleetRangePct": [42.0, 50.0] }
+}

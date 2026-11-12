@@ -1,0 +1,38 @@
+{
+    "success": true,
+    "message": "data retrieved successfully",
+    "data": {
+        "id": "default",
+        "version": 1,
+        "gpuUtilization": {
+            "idleMax": 0,
+            "normalMax": 80,
+            "highMax": 95
+        },
+        "temperature": {
+            "normalMax": 60,
+            "warmMax": 75,
+            "hotMax": 85
+        },
+        "memory": {
+            "idleMax": 0,
+            "normalMax": 60,
+            "highMax": 85
+        },
+        "power": {
+            "idleMax": 0,
+            "normalMax": 50,
+            "highMax": 80
+        },
+        "gpuEfficiency": {
+            "idleThreshold": 0,
+            "underUtilizedMax": 20,
+            "overUtilizedMin": 80,
+            "topN": 100,
+            "durationHours": 168,
+            "durationDays": 7
+        },
+        "createdAt": "2026-06-26T11:15:24.017Z",
+        "updatedAt": "2026-10-13T13:51:15.64Z"
+    }
+}

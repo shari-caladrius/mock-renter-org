@@ -1,0 +1,481 @@
+[{
+  "_id": {
+    "$oid": "f59c01b908fa2fb73cbe3360"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-h200-01",
+  "projectAlias": "San Diego, CA H200 cluster 01",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-h200-01.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786338960"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786338420"
+  },
+  "updatedAt": {
+    "$numberLong": "1786339620"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "8c0d6d1db0373dec91b771ab"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-h200-02",
+  "projectAlias": "San Diego, CA H200 cluster 02",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-h200-02.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785046620"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785046260"
+  },
+  "updatedAt": {
+    "$numberLong": "1785047280"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "81991fbc918eacd5c68f5693"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-h200-03",
+  "projectAlias": "San Diego, CA H200 cluster 03",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-h200-03.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786435140"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786434720"
+  },
+  "updatedAt": {
+    "$numberLong": "1786436640"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "e45662c5e8dd224132f7cf97"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-h200-04",
+  "projectAlias": "San Diego, CA H200 cluster 04",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-h200-04.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786249020"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786248840"
+  },
+  "updatedAt": {
+    "$numberLong": "1786250520"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "8c89e874453a7405dd397ab4"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-b300-01",
+  "projectAlias": "San Diego, CA B300 cluster 01",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-b300-01.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785199320"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785198840"
+  },
+  "updatedAt": {
+    "$numberLong": "1785200220"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "6cf3fa0f95325ee41b3f0e7a"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-b300-02",
+  "projectAlias": "San Diego, CA B300 cluster 02",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-b300-02.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785129060"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785128580"
+  },
+  "updatedAt": {
+    "$numberLong": "1785129540"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "e0cb41d30ab1b53cacc1c781"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-b300-03",
+  "projectAlias": "San Diego, CA B300 cluster 03",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-b300-03.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786254120"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786253640"
+  },
+  "updatedAt": {
+    "$numberLong": "1786255500"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "b8c6551229b2db8066891f3c"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-b300-04",
+  "projectAlias": "San Diego, CA B300 cluster 04",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-b300-04.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785201000"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785200520"
+  },
+  "updatedAt": {
+    "$numberLong": "1785202020"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "1b20814c246eb27e4c001bb9"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-rtxpro-01",
+  "projectAlias": "San Diego, CA RTX PRO 6000 cluster 01",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-rtxpro-01.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785456960"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785456720"
+  },
+  "updatedAt": {
+    "$numberLong": "1785458640"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "08aeaa700d2dbab457832582"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-rtxpro-02",
+  "projectAlias": "San Diego, CA RTX PRO 6000 cluster 02",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-rtxpro-02.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785132360"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785132120"
+  },
+  "updatedAt": {
+    "$numberLong": "1785133380"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "3dfb0c9d60228fa55ff68b67"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-h200-05",
+  "projectAlias": "San Diego, CA H200 cluster 05",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-h200-05.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786509540"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786508940"
+  },
+  "updatedAt": {
+    "$numberLong": "1786509780"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "84928d7216d997640ed527b2"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-rtxpro-03",
+  "projectAlias": "San Diego, CA RTX PRO 6000 cluster 03",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-rtxpro-03.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1785049860"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1785049740"
+  },
+  "updatedAt": {
+    "$numberLong": "1785049920"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+},
+{
+  "_id": {
+    "$oid": "9fba893fb705c4a01ac25973"
+  },
+  "orgId": "7921b45f-e8cd-4da2-b138-5f93d633af76",
+  "orgName": "govacev369.cwsgear.com",
+  "workSpaceId": "",
+  "projectName": "san-diego-ca-rtxpro-04",
+  "projectAlias": "San Diego, CA RTX PRO 6000 cluster 04",
+  "referenceDb": "govacev369.cwsgear.com.san-diego-ca-rtxpro-04.discover",
+  "description": "",
+  "status": "ACTIVE",
+  "isDraft": false,
+  "commandCenter": true,
+  "commandCenterPreparedAt": {
+    "$numberLong": "1786757280"
+  },
+  "commandCenterIsUpdated": false,
+  "createdAt": {
+    "$numberLong": "1786756860"
+  },
+  "updatedAt": {
+    "$numberLong": "1786758960"
+  },
+  "createdBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "updatedBy": "2fdd1673-d4ad-435d-b5a6-763556c45460",
+  "isDeleted": false,
+  "region": {
+    "hostingType": ""
+  },
+  "isComponentsSimulated": true,
+  "simulatedComponentsCount": {
+    "appComponents": 360,
+    "infraEntities": 15
+  },
+  "useStaticGraph": true
+}]

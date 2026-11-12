@@ -1,0 +1,6 @@
+{
+  "_comment": "Smallest input: cluster names, node counts, workload counts and names all come from the seed and the defaults (H200, TRAINING_JOB 0-3 and INFERENCE_SERVICE 5-8 per cluster). No orgId: only for a dry run.",
+  "org": { "orgName": "minimal-renter.example.com" },
+  "seed": 5,
+  "clusters": { "count": 3, "slurm": 1, "k8s": 2, "nodes": [4, 6] }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "_id": {
+      "$oid": "724efb73fd13d5bf5cf746c8"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "resourceId": "c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+    "alias": "Helios",
+    "createdAt": {
+      "$numberLong": "1779402540"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "details": "",
+    "isDeleted": false,
+    "name": "helios",
+    "projectId": {
+      "$oid": "4f1cd77bcc259baeb7acac4e"
+    },
+    "provider": "chronoscale",
+    "region": "us-east-1",
+    "toolKey": "38a0974bd0f717fcd171595243354142feb81aa3a99bacd6b3289bb9017b0f58",
+    "type": "slurm_cluster",
+    "updatedAt": {
+      "$numberLong": "1779402540"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "f5efc189b945a6f2832e1805"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "resourceId": "a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+    "alias": "Atlas",
+    "createdAt": {
+      "$numberLong": "1779263400"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "details": "",
+    "isDeleted": false,
+    "name": "atlas",
+    "projectId": {
+      "$oid": "71d95e1e91b22bed62dfccbd"
+    },
+    "provider": "chronoscale",
+    "region": "us-east-1",
+    "toolKey": "13eb07a14b68ce5669727154a494daf993aaa7bb352fe7feb4452a00662b7faf",
+    "type": "kubernetes_cluster",
+    "updatedAt": {
+      "$numberLong": "1779263400"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "f9fa70f81506659b7012e29e"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "resourceId": "8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+    "alias": "Orion",
+    "createdAt": {
+      "$numberLong": "1781761140"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "details": "",
+    "isDeleted": false,
+    "name": "orion",
+    "projectId": {
+      "$oid": "3fded3116bf98273ac30e939"
+    },
+    "provider": "chronoscale",
+    "region": "us-east-1",
+    "toolKey": "3060adf9cbfe612d2b7eaa82778aa0b8d229c8ce5fa9463ae0dd894470156d83",
+    "type": "kubernetes_cluster",
+    "updatedAt": {
+      "$numberLong": "1781761140"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  }
+]

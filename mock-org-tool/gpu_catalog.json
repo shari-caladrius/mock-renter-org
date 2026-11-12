@@ -1,0 +1,12 @@
+{
+  "_comment": "GPU types for renter orgs. Use the key in the input: \"gpu\": \"GB200\" (fleet default) or per cluster. memoryMib = GB x 1024 as the UI shows it; priceCentsPerHour = rental price per GPU-hour (rate card); idlePowerW / maxPowerW (TDP) and cooling set the default temperature / power ranges. Add or edit entries here; every key is a valid \"gpu\" value.",
+  "A100":  { "model": "NVIDIA A100 80GB HBM2e",       "memoryMib": 81920,  "gpusPerNode": 8, "priceCentsPerHour": 129, "idlePowerW": 55,  "maxPowerW": 400,  "cooling": "air" },
+  "L40S":  { "model": "NVIDIA L40S 48GB GDDR6",       "memoryMib": 49152,  "gpusPerNode": 8, "priceCentsPerHour": 99,  "idlePowerW": 35,  "maxPowerW": 350,  "cooling": "air" },
+  "H100":  { "model": "NVIDIA H100 80GB HBM3",        "memoryMib": 81920,  "gpusPerNode": 8, "priceCentsPerHour": 249, "idlePowerW": 70,  "maxPowerW": 700,  "cooling": "air" },
+  "H200":  { "model": "NVIDIA H200 141GB HBM3e",      "memoryMib": 144384, "gpusPerNode": 8, "priceCentsPerHour": 399, "idlePowerW": 75,  "maxPowerW": 700,  "cooling": "air" },
+  "B200":  { "model": "NVIDIA B200 180GB HBM3e",      "memoryMib": 184320, "gpusPerNode": 8, "priceCentsPerHour": 549, "idlePowerW": 120, "maxPowerW": 1000, "cooling": "air" },
+  "B300":  { "model": "NVIDIA B300 288GB HBM3e",      "memoryMib": 294912, "gpusPerNode": 8, "priceCentsPerHour": 947, "idlePowerW": 140, "maxPowerW": 1100, "cooling": "liquid" },
+  "GB200": { "model": "NVIDIA GB200 186GB HBM3e",     "memoryMib": 190464, "gpusPerNode": 4, "priceCentsPerHour": 699, "idlePowerW": 130, "maxPowerW": 1200, "cooling": "liquid" },
+  "GB300": { "model": "NVIDIA GB300 288GB HBM3e",     "memoryMib": 294912, "gpusPerNode": 4, "priceCentsPerHour": 999, "idlePowerW": 150, "maxPowerW": 1400, "cooling": "liquid" },
+  "MI300X": { "model": "AMD Instinct MI300X 192GB HBM3", "memoryMib": 196608, "gpusPerNode": 8, "priceCentsPerHour": 299, "idlePowerW": 90, "maxPowerW": 750, "cooling": "air" }
+}

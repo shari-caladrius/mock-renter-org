@@ -1,0 +1,279 @@
+{
+    "success": true,
+    "message": "GPU efficiency trend fetched successfully",
+    "data": {
+        "days": [
+            {
+                "date": "2026-10-14",
+                "avgFleetUtil": 27.1,
+                "idleCount": 18,
+                "underCount": 102,
+                "normalCount": 27,
+                "overCount": 13,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-15",
+                "avgFleetUtil": 35,
+                "idleCount": 21,
+                "underCount": 82,
+                "normalCount": 33,
+                "overCount": 24,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-16",
+                "avgFleetUtil": 28.9,
+                "idleCount": 48,
+                "underCount": 50,
+                "normalCount": 54,
+                "overCount": 8,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-17",
+                "avgFleetUtil": 37.6,
+                "idleCount": 32,
+                "underCount": 62,
+                "normalCount": 18,
+                "overCount": 48,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-18",
+                "avgFleetUtil": 26.3,
+                "idleCount": 24,
+                "underCount": 91,
+                "normalCount": 31,
+                "overCount": 14,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-19",
+                "avgFleetUtil": 19.8,
+                "idleCount": 40,
+                "underCount": 91,
+                "normalCount": 26,
+                "overCount": 3,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-20",
+                "avgFleetUtil": 29.8,
+                "idleCount": 29,
+                "underCount": 79,
+                "normalCount": 37,
+                "overCount": 15,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-21",
+                "avgFleetUtil": 18.6,
+                "idleCount": 40,
+                "underCount": 100,
+                "normalCount": 12,
+                "overCount": 8,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-22",
+                "avgFleetUtil": 38.7,
+                "idleCount": 35,
+                "underCount": 53,
+                "normalCount": 28,
+                "overCount": 44,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-23",
+                "avgFleetUtil": 15.5,
+                "idleCount": 51,
+                "underCount": 90,
+                "normalCount": 9,
+                "overCount": 10,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-24",
+                "avgFleetUtil": 28.7,
+                "idleCount": 36,
+                "underCount": 68,
+                "normalCount": 47,
+                "overCount": 9,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-25",
+                "avgFleetUtil": 23.3,
+                "idleCount": 52,
+                "underCount": 62,
+                "normalCount": 38,
+                "overCount": 8,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-26",
+                "avgFleetUtil": 17,
+                "idleCount": 30,
+                "underCount": 118,
+                "normalCount": 10,
+                "overCount": 2,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-27",
+                "avgFleetUtil": 23.2,
+                "idleCount": 26,
+                "underCount": 100,
+                "normalCount": 25,
+                "overCount": 9,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-28",
+                "avgFleetUtil": 31.5,
+                "idleCount": 26,
+                "underCount": 84,
+                "normalCount": 16,
+                "overCount": 34,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-29",
+                "avgFleetUtil": 26.3,
+                "idleCount": 15,
+                "underCount": 102,
+                "normalCount": 36,
+                "overCount": 7,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-30",
+                "avgFleetUtil": 16.3,
+                "idleCount": 53,
+                "underCount": 85,
+                "normalCount": 17,
+                "overCount": 5,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-10-31",
+                "avgFleetUtil": 34.7,
+                "idleCount": 28,
+                "underCount": 54,
+                "normalCount": 74,
+                "overCount": 4,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-01",
+                "avgFleetUtil": 17.3,
+                "idleCount": 23,
+                "underCount": 122,
+                "normalCount": 9,
+                "overCount": 6,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-02",
+                "avgFleetUtil": 34.9,
+                "idleCount": 33,
+                "underCount": 54,
+                "normalCount": 52,
+                "overCount": 21,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-03",
+                "avgFleetUtil": 27.1,
+                "idleCount": 47,
+                "underCount": 54,
+                "normalCount": 54,
+                "overCount": 5,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-04",
+                "avgFleetUtil": 18.9,
+                "idleCount": 18,
+                "underCount": 124,
+                "normalCount": 12,
+                "overCount": 6,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-05",
+                "avgFleetUtil": 32.2,
+                "idleCount": 46,
+                "underCount": 63,
+                "normalCount": 13,
+                "overCount": 38,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-06",
+                "avgFleetUtil": 37.6,
+                "idleCount": 43,
+                "underCount": 35,
+                "normalCount": 57,
+                "overCount": 25,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-07",
+                "avgFleetUtil": 26.7,
+                "idleCount": 13,
+                "underCount": 113,
+                "normalCount": 18,
+                "overCount": 16,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-08",
+                "avgFleetUtil": 48.1,
+                "idleCount": 34,
+                "underCount": 38,
+                "normalCount": 30,
+                "overCount": 58,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-09",
+                "avgFleetUtil": 22.7,
+                "idleCount": 34,
+                "underCount": 98,
+                "normalCount": 12,
+                "overCount": 16,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-10",
+                "avgFleetUtil": 47.7,
+                "idleCount": 34,
+                "underCount": 22,
+                "normalCount": 70,
+                "overCount": 34,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-11",
+                "avgFleetUtil": 23.9,
+                "idleCount": 23,
+                "underCount": 100,
+                "normalCount": 35,
+                "overCount": 2,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-12",
+                "avgFleetUtil": 36.4,
+                "idleCount": 32,
+                "underCount": 48,
+                "normalCount": 64,
+                "overCount": 16,
+                "totalDevices": 160
+            }
+        ],
+        "durationDays": 30
+    }
+}

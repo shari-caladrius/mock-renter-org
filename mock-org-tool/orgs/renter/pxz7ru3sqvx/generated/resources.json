@@ -1,0 +1,143 @@
+{
+    "success": true,
+    "message": "data retrieved successfully",
+    "data": [
+        {
+            "resourceId": "c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+            "toolKey": "38a0974bd0f717fcd171595243354142feb81aa3a99bacd6b3289bb9017b0f58",
+            "projectId": "4f1cd77bcc259baeb7acac4e",
+            "projectName": "helios",
+            "projectAlias": "Helios",
+            "name": "helios",
+            "alias": "Helios",
+            "type": {
+                "label": "Slurm Cluster",
+                "value": "slurm_cluster"
+            },
+            "provider": {
+                "label": "Chronoscale",
+                "value": "chronoscale"
+            },
+            "region": "us-east-1",
+            "delegateKey": "81a31e55afaf8b8b0eec5e37d57204b4b8cb9354844f28b5b2a3104fb7d4fcec",
+            "installCommand": [
+                {
+                    "title": "Verify Slurm Installation",
+                    "description": "Make sure the Slurm client tools are available on the head node.",
+                    "command": "sinfo --version"
+                },
+                {
+                    "title": "Verify Cluster Nodes",
+                    "description": "Confirm the compute nodes are visible to the scheduler.",
+                    "command": "sinfo -N -l"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Run the installer on the head node. It deploys the delegate and the node agents to the compute nodes.",
+                    "command": "curl -fsSL \"https://lamintegration.blob.core.windows.net/installers/slurm/install-cluster.sh?<sas-token>\" -o /tmp/caladrius-install-cluster.sh && \\\nORG_SLUG=da41c956d92 \\\nCLUSTER=helios \\\nENVIRONMENT=production \\\nREGION=us-east-1 \\\nDELEGATE_KEY=81a31e55afaf8b8b0eec5e37d57204b4b8cb9354844f28b5b2a3104fb7d4fcec \\\nCOMPUTE_NODES=auto \\\nSSH_USER=<ssh-user> \\\nSSH_KEY=<path-to-ssh-private-key> \\\nENABLE_BMC=false \\\nLOKI_PUSH_URL=https://logs.caladrius.ai/loki/api/v1/push \\\nPROMETHEUS_REMOTE_WRITE_URL=https://metrics.caladrius.ai/api/v1/write \\\nPROMETHEUS_CA_CRT=\"<base64-ca-crt>\" \\\nPROMETHEUS_TLS_CRT=\"<base64-tls-crt>\" \\\nPROMETHEUS_TLS_KEY=\"<base64-tls-key>\" \\\nALLOY_CA_CRT=\"<base64-ca-crt>\" \\\nALLOY_TLS_CRT=\"<base64-tls-crt>\" \\\nALLOY_TLS_KEY=\"<base64-tls-key>\" \\\nACR_USERNAME=caladriusacr \\\nACR_PASSWORD=\"<acr-password>\" \\\nbash /tmp/caladrius-install-cluster.sh"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1794501603,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+            "toolKey": "13eb07a14b68ce5669727154a494daf993aaa7bb352fe7feb4452a00662b7faf",
+            "projectId": "71d95e1e91b22bed62dfccbd",
+            "projectName": "atlas",
+            "projectAlias": "Atlas",
+            "name": "atlas",
+            "alias": "Atlas",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Chronoscale",
+                "value": "chronoscale"
+            },
+            "region": "us-east-1",
+            "delegateKey": "a929f42a97a81d4f2b1809a201f7d934565c550ea34a8aef011f2aa6ef1571fb",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-8d8037c770a-27e238f957019c901a4f1f21-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"<acr-password>\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-8d8037c770a-27e238f957019c901a4f1f21 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1794501603,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+            "toolKey": "3060adf9cbfe612d2b7eaa82778aa0b8d229c8ce5fa9463ae0dd894470156d83",
+            "projectId": "3fded3116bf98273ac30e939",
+            "projectName": "orion",
+            "projectAlias": "Orion",
+            "name": "orion",
+            "alias": "Orion",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Chronoscale",
+                "value": "chronoscale"
+            },
+            "region": "us-east-1",
+            "delegateKey": "f2f674875cbc838036242b4a57be7deec0c97df33b9c413d4e28babe9ea41fde",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-0288d29b2be-82a9aeb76b201d67bada7296-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"<acr-password>\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-0288d29b2be-82a9aeb76b201d67bada7296 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1794501603,
+            "clusterDiagnosticsEnabled": false
+        }
+    ]
+}

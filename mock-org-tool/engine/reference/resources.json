@@ -1,0 +1,643 @@
+{
+    "success": true,
+    "message": "data retrieved successfully",
+    "data": [
+        {
+            "resourceId": "4a207ac9be1ee00b0e43eeff2927fc44eb1c3b3438cc164a85e4c48b9116db60",
+            "toolKey": "b96e508b3b606634434b49717e2ec2426425ca7ea2d27d85090f2dbb89078e64",
+            "projectId": "f59c01b908fa2fb73cbe3360",
+            "projectName": "san-diego-ca-h200-01",
+            "projectAlias": "San Diego, CA H200 cluster 01",
+            "name": "san-diego-ca-h200-01",
+            "alias": "san-diego-ca-h200-01",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "a896ca1bf81acdeb9fd37a162e2e0248c20f7aa77ca2033b443984c3d50f95dd",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-e0c0b8f26f0-6d5834fc0045a65f9eb483d7-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-e0c0b8f26f0-6d5834fc0045a65f9eb483d7 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "fb3e7611685f417a598fa0499b7913c9e4f071f20012fc3c0f7ebc060b4720ea",
+            "toolKey": "e4f5deb2ff32a9008b33787c608fbaf1f250f3576d4892c82afdd49988d4ad12",
+            "projectId": "8c0d6d1db0373dec91b771ab",
+            "projectName": "san-diego-ca-h200-02",
+            "projectAlias": "San Diego, CA H200 cluster 02",
+            "name": "san-diego-ca-h200-02",
+            "alias": "san-diego-ca-h200-02",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "da6b26a1353680aff934b916a62d16f25cf14a57cf8f32b60f48ea8260f4075e",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-c0d22587e31-986bee06fce24d61d5a6f5c7-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-c0d22587e31-986bee06fce24d61d5a6f5c7 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "e2d9bd52532252d8d47fd3c505c001ecf235ef4ed396fbeb00787007f8ddcf99",
+            "toolKey": "23d583388d10f1e7a876949ffd843bc03e5f6d806cd7f839c2fec14d4973e272",
+            "projectId": "81991fbc918eacd5c68f5693",
+            "projectName": "san-diego-ca-h200-03",
+            "projectAlias": "San Diego, CA H200 cluster 03",
+            "name": "san-diego-ca-h200-03",
+            "alias": "san-diego-ca-h200-03",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "bf3a7891497ae25be062d8595d95c107682ada336bbc4229718b997f314238fd",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-89fd76dc0ee-3b41f8200e0c3b7ef054ac2f-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-89fd76dc0ee-3b41f8200e0c3b7ef054ac2f \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "ca006ef4271a9ee259e4c5cc9abd3af1b17a12c1e836db47dc73cf514df6a3cf",
+            "toolKey": "5b549e0c1ee7bab9ededd40ba3b1acb1034bf39f3a7ea91fb8d3ee9f6fda512f",
+            "projectId": "e45662c5e8dd224132f7cf97",
+            "projectName": "san-diego-ca-h200-04",
+            "projectAlias": "San Diego, CA H200 cluster 04",
+            "name": "san-diego-ca-h200-04",
+            "alias": "san-diego-ca-h200-04",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "63c5ad2fc28d74203a930207e6b1176ca6f6cbcfd32dd9385821e18467eb21ff",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-5df6dfb2bc4-12f05aa7eee2358a3d52b250-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-5df6dfb2bc4-12f05aa7eee2358a3d52b250 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "0bed18aef34d6e8ecc072997343cfa47fb103170df87b4f74b54ce059f9f477a",
+            "toolKey": "fc5964f7d0d07678f096448e1fae38041102b03e7fc8c1cabd5cfc404531e8bf",
+            "projectId": "8c89e874453a7405dd397ab4",
+            "projectName": "san-diego-ca-b300-01",
+            "projectAlias": "San Diego, CA B300 cluster 01",
+            "name": "san-diego-ca-b300-01",
+            "alias": "san-diego-ca-b300-01",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "05834d265993bc0ce6375b45633e0f8cf24173b2c655fd8b5678543fcd642277",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-a54afa8af8f-05645695059982dcb51c3f17-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-a54afa8af8f-05645695059982dcb51c3f17 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "a3711c34a1a1b8e4c7e0ef2f6a31821249fe928b4e449a1e9ff22b35af2135c8",
+            "toolKey": "6a9f488dbb76db957da32729374d967a9e2c9f36e83ab6c2bd37c77b6f278330",
+            "projectId": "6cf3fa0f95325ee41b3f0e7a",
+            "projectName": "san-diego-ca-b300-02",
+            "projectAlias": "San Diego, CA B300 cluster 02",
+            "name": "san-diego-ca-b300-02",
+            "alias": "san-diego-ca-b300-02",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "2d0d514cb78571c36ef85dc9bcccd76649a3e0e6eacf3e1fce6ed14f04ae5002",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-c64058c1186-d3354ee190821b76cf52c713-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-c64058c1186-d3354ee190821b76cf52c713 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "7a25bc75fd9223cf7c246234487fd787bb4414db7121d5db9683c401d2237a81",
+            "toolKey": "a606ea5a3e225619ebe59e079894201e24c7805726b8efeb7da37f232823f4dc",
+            "projectId": "e0cb41d30ab1b53cacc1c781",
+            "projectName": "san-diego-ca-b300-03",
+            "projectAlias": "San Diego, CA B300 cluster 03",
+            "name": "san-diego-ca-b300-03",
+            "alias": "san-diego-ca-b300-03",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "e0e104d4ae61703a426878c54f35e26c285c557a15bfc0c6afbbd7aa2479274e",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-94b0d311f08-80657cd0f154d63c87fc6b58-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-94b0d311f08-80657cd0f154d63c87fc6b58 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "dcc7f6bdf372b0cf99ea3c0bc5cc9bf22508b8025af6bbdb8a7ef84a678ed012",
+            "toolKey": "ed888b61c19ec58093748e1ff02f2b119cffbcedeb3c3434991a509fef95631c",
+            "projectId": "b8c6551229b2db8066891f3c",
+            "projectName": "san-diego-ca-b300-04",
+            "projectAlias": "San Diego, CA B300 cluster 04",
+            "name": "san-diego-ca-b300-04",
+            "alias": "san-diego-ca-b300-04",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "afeb841e03666f78e660cb0bca1125c9591b055ce73a62f8a9ce774cabf3dd46",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-f8e55c26ffb-7738850c5a6f8d0c2940d019-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-f8e55c26ffb-7738850c5a6f8d0c2940d019 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "392b3a3dd25c63b754f7af7545721f71888f8699d8d9659a1b521f7469fee37c",
+            "toolKey": "06636127a5b4bb01ffe4d1cd8876048a37207602bc951e7b04a015451c51d364",
+            "projectId": "1b20814c246eb27e4c001bb9",
+            "projectName": "san-diego-ca-rtxpro-01",
+            "projectAlias": "San Diego, CA RTX PRO 6000 cluster 01",
+            "name": "san-diego-ca-rtxpro-01",
+            "alias": "san-diego-ca-rtxpro-01",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "f904589662b47754d3c5bc085063e45186086647f439eb3bec96cc5e3f22d0fa",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-9c0a27f21f5-59198e8851397de9f3543e5b-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-9c0a27f21f5-59198e8851397de9f3543e5b \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "c5d2c444c59653edbb06c1f63492ba58093d9e0691cd52bc0fb1780567891bf1",
+            "toolKey": "1bc8c35efa3f98026cf6af1407a248891460d927eb7a18dbf8b87529285b3ef8",
+            "projectId": "08aeaa700d2dbab457832582",
+            "projectName": "san-diego-ca-rtxpro-02",
+            "projectAlias": "San Diego, CA RTX PRO 6000 cluster 02",
+            "name": "san-diego-ca-rtxpro-02",
+            "alias": "san-diego-ca-rtxpro-02",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "5d5bbc85103b61b8bfc2a819590f5115ade5663653f1f8ae785e20710f6e2286",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-c8099e12ad1-682d3d1ffdc77e3e1390c0f7-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-c8099e12ad1-682d3d1ffdc77e3e1390c0f7 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "429900514fcbe0d8c68073821f7897bbb3753e2bdcb0b09ca974d47c49cb2cfa",
+            "toolKey": "657bae557e56818b649f46d47a1b770d93b944faee53bfe8820d9efbddce7c8e",
+            "projectId": "3dfb0c9d60228fa55ff68b67",
+            "projectName": "san-diego-ca-h200-05",
+            "projectAlias": "San Diego, CA H200 cluster 05",
+            "name": "san-diego-ca-h200-05",
+            "alias": "san-diego-ca-h200-05",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "8b04d4b0599899d66a64b8af0699f0d7279fed061f045e136a75dd386c78887e",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-3356853fe3d-a128bdc0608f062a3c65b218-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-3356853fe3d-a128bdc0608f062a3c65b218 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "0e94d2c2967ab0f026eb1c914ce82098d5b2b67918db641ce0bbb443109ac722",
+            "toolKey": "c05a8df588d96f650df056f73c98be445af4fd8b684d547cf206cd0d3ae5a5ef",
+            "projectId": "84928d7216d997640ed527b2",
+            "projectName": "san-diego-ca-rtxpro-03",
+            "projectAlias": "San Diego, CA RTX PRO 6000 cluster 03",
+            "name": "san-diego-ca-rtxpro-03",
+            "alias": "san-diego-ca-rtxpro-03",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "81cf0d868358af29732c6e1c8cd8bfb068306df1e62d255ce1cc9039c4e9e5bf",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-af834c16fa6-e199df0ae344b3b6cb74de36-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-af834c16fa6-e199df0ae344b3b6cb74de36 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        },
+        {
+            "resourceId": "696df5b8b5f73b93f63485e827a651e5f58118fc44ff9d2de69b39a396ef2a6b",
+            "toolKey": "8e66c963e15b2c8409d1858549c36b88ea80111d28140bb5b5adeb7027061d82",
+            "projectId": "9fba893fb705c4a01ac25973",
+            "projectName": "san-diego-ca-rtxpro-04",
+            "projectAlias": "San Diego, CA RTX PRO 6000 cluster 04",
+            "name": "san-diego-ca-rtxpro-04",
+            "alias": "san-diego-ca-rtxpro-04",
+            "type": {
+                "label": "Kubernetes Cluster",
+                "value": "kubernetes_cluster"
+            },
+            "provider": {
+                "label": "Laitent",
+                "value": "LAITENT"
+            },
+            "region": "san-diego-ca",
+            "delegateKey": "5e557b2fec7c87395ef8c3dd891031c9608cdbfca5e1ce3046e32a618e68c4dd",
+            "installCommand": [
+                {
+                    "title": "Verify kubectl Installation",
+                    "description": "Make sure kubectl is installed and configured correctly to manage the cluster.",
+                    "command": "kubectl version --client"
+                },
+                {
+                    "title": "Verify Cluster Context",
+                    "description": "Make sure you are in the correct context. You can verify it by running the following command:",
+                    "command": "kubectl config current-context"
+                },
+                {
+                    "title": "Create Namespace",
+                    "description": "Create the caladrius namespace in your Kubernetes cluster.",
+                    "command": "kubectl create namespace caladrius"
+                },
+                {
+                    "title": "Create Image Pull Secret",
+                    "description": "Create the ACR secret so Kubernetes can pull Caladrius container images.",
+                    "command": "kubectl create secret docker-registry ds-ec63236a4b4-6dd061aa4f0c016e8b8f3802-acr-secret --docker-server=caladriusacr.azurecr.io --docker-username=caladriusacr --docker-password=\"\u003cacr-password\u003e\" -n caladrius"
+                },
+                {
+                    "title": "Install Caladrius Agent",
+                    "description": "Deploy the Caladrius delegate Helm chart into the caladrius namespace.",
+                    "command": "helm upgrade --install ds-ec63236a4b4-6dd061aa4f0c016e8b8f3802 \\\n  https://caladriushelmcharts5.blob.core.windows.net/helmcharts/caladrius-delegate-1.0.138.tgz \\\n  --namespace caladrius --create-namespace"
+                }
+            ],
+            "agentStatus": "CONNECTED",
+            "agenticLastSyncAt": 1792658654,
+            "clusterDiagnosticsEnabled": false
+        }
+    ]
+}

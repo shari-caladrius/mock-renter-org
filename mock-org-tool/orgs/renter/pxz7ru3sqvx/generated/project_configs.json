@@ -1,0 +1,113 @@
+[
+  {
+    "_id": {
+      "$oid": "4f1cd77bcc259baeb7acac4e"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "workSpaceId": "",
+    "projectName": "helios",
+    "projectAlias": "Helios",
+    "referenceDb": "yedol22330.jcaton.com.helios.discover",
+    "description": "",
+    "status": "ACTIVE",
+    "isDraft": false,
+    "commandCenter": true,
+    "commandCenterPreparedAt": {
+      "$numberLong": "1779402840"
+    },
+    "commandCenterIsUpdated": false,
+    "createdAt": {
+      "$numberLong": "1779402360"
+    },
+    "updatedAt": {
+      "$numberLong": "1779404340"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "isDeleted": false,
+    "region": {
+      "hostingType": ""
+    },
+    "isComponentsSimulated": true,
+    "simulatedComponentsCount": {
+      "appComponents": 360,
+      "infraEntities": 15
+    },
+    "useStaticGraph": true
+  },
+  {
+    "_id": {
+      "$oid": "71d95e1e91b22bed62dfccbd"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "workSpaceId": "",
+    "projectName": "atlas",
+    "projectAlias": "Atlas",
+    "referenceDb": "yedol22330.jcaton.com.atlas.discover",
+    "description": "",
+    "status": "ACTIVE",
+    "isDraft": false,
+    "commandCenter": true,
+    "commandCenterPreparedAt": {
+      "$numberLong": "1779263700"
+    },
+    "commandCenterIsUpdated": false,
+    "createdAt": {
+      "$numberLong": "1779263100"
+    },
+    "updatedAt": {
+      "$numberLong": "1779265020"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "isDeleted": false,
+    "region": {
+      "hostingType": ""
+    },
+    "isComponentsSimulated": true,
+    "simulatedComponentsCount": {
+      "appComponents": 360,
+      "infraEntities": 15
+    },
+    "useStaticGraph": true
+  },
+  {
+    "_id": {
+      "$oid": "3fded3116bf98273ac30e939"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "workSpaceId": "",
+    "projectName": "orion",
+    "projectAlias": "Orion",
+    "referenceDb": "yedol22330.jcaton.com.orion.discover",
+    "description": "",
+    "status": "ACTIVE",
+    "isDraft": false,
+    "commandCenter": true,
+    "commandCenterPreparedAt": {
+      "$numberLong": "1781761320"
+    },
+    "commandCenterIsUpdated": false,
+    "createdAt": {
+      "$numberLong": "1781760780"
+    },
+    "updatedAt": {
+      "$numberLong": "1781762220"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "isDeleted": false,
+    "region": {
+      "hostingType": ""
+    },
+    "isComponentsSimulated": true,
+    "simulatedComponentsCount": {
+      "appComponents": 360,
+      "infraEntities": 15
+    },
+    "useStaticGraph": true
+  }
+]

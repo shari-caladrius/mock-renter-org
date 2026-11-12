@@ -1,0 +1,128 @@
+[
+  {
+    "_id": {
+      "$oid": "e11db86dd6152770971582b6"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "tool": "CHRONOSCALE",
+    "toolKey": "38a0974bd0f717fcd171595243354142feb81aa3a99bacd6b3289bb9017b0f58",
+    "toolConfigId": {
+      "$oid": "0774231538db676bfc445f32"
+    },
+    "projectId": {
+      "$oid": "4f1cd77bcc259baeb7acac4e"
+    },
+    "projectName": "helios",
+    "dataSourceReferenceName": "Direct Connect - Chronoscale",
+    "dataSourceTypes": [],
+    "matchingKey": "chronoscale:slurm_cluster:c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+    "canonicalName": "helios",
+    "category": "INFRA",
+    "subcategory": "SLURM_CLUSTER",
+    "type": "SLURM_CLUSTER",
+    "namespace": "",
+    "hierarchyLevel": 0,
+    "hierarchyPath": [],
+    "attributes": {
+      "details": "",
+      "id": "c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+      "region": "us-east-1"
+    },
+    "isSelected": true,
+    "selectionStatus": "LINKED",
+    "isDeleted": false,
+    "createdAt": {
+      "$numberLong": "1779402540"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "41d8d9368450b5113ff1a81a"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "tool": "CHRONOSCALE",
+    "toolKey": "13eb07a14b68ce5669727154a494daf993aaa7bb352fe7feb4452a00662b7faf",
+    "toolConfigId": {
+      "$oid": "0774231538db676bfc445f32"
+    },
+    "projectId": {
+      "$oid": "71d95e1e91b22bed62dfccbd"
+    },
+    "projectName": "atlas",
+    "dataSourceReferenceName": "Direct Connect - Chronoscale",
+    "dataSourceTypes": [],
+    "matchingKey": "chronoscale:kubernetes_cluster:a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+    "canonicalName": "atlas",
+    "category": "INFRA",
+    "subcategory": "KUBERNETES_CLUSTER",
+    "type": "KUBERNETES_CLUSTER",
+    "namespace": "",
+    "hierarchyLevel": 0,
+    "hierarchyPath": [],
+    "attributes": {
+      "details": "",
+      "id": "a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+      "region": "us-east-1"
+    },
+    "isSelected": true,
+    "selectionStatus": "LINKED",
+    "isDeleted": false,
+    "createdAt": {
+      "$numberLong": "1779263400"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "b9e1771bca30923ffabf35a1"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com",
+    "tool": "CHRONOSCALE",
+    "toolKey": "3060adf9cbfe612d2b7eaa82778aa0b8d229c8ce5fa9463ae0dd894470156d83",
+    "toolConfigId": {
+      "$oid": "0774231538db676bfc445f32"
+    },
+    "projectId": {
+      "$oid": "3fded3116bf98273ac30e939"
+    },
+    "projectName": "orion",
+    "dataSourceReferenceName": "Direct Connect - Chronoscale",
+    "dataSourceTypes": [],
+    "matchingKey": "chronoscale:kubernetes_cluster:8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+    "canonicalName": "orion",
+    "category": "INFRA",
+    "subcategory": "KUBERNETES_CLUSTER",
+    "type": "KUBERNETES_CLUSTER",
+    "namespace": "",
+    "hierarchyLevel": 0,
+    "hierarchyPath": [],
+    "attributes": {
+      "details": "",
+      "id": "8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+      "region": "us-east-1"
+    },
+    "isSelected": true,
+    "selectionStatus": "LINKED",
+    "isDeleted": false,
+    "createdAt": {
+      "$numberLong": "1781761140"
+    },
+    "updatedAt": {
+      "$numberLong": "1794501305"
+    },
+    "createdBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47",
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  }
+]

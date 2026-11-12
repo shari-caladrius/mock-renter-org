@@ -1,0 +1,41 @@
+{
+  "_comment": "Org yedol22330.jcaton.com (pxz7ru3sqvx). Exact named workloads (workloads.items instead of per-cluster counts), aliases, a bigger shared filesystem and one hot GPU (overrides are exempt from the metric ranges). Every workload Healthy.",
+  "org": {
+    "orgName": "yedol22330.jcaton.com",
+    "orgSlug": "pxz7ru3sqvx",
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "region": "us-east-1"
+  },
+  "mongo": { "database": "caladrius_pxz7ru3sqvx" },
+  "seed": 11,
+  "snapshot": "now",
+  "gpu": "H200",
+  "clusters": [
+    { "name": "helios", "alias": "Helios Training", "kind": "slurm", "nodes": 8,
+      "sharedFs": { "fsType": "lustre", "capacityGib": 409600 } },
+    { "name": "atlas", "alias": "Atlas Serving", "kind": "k8s", "nodes": 6 },
+    { "name": "orion", "alias": "Orion Serving", "kind": "k8s", "nodes": 6 }
+  ],
+  "workloads": {
+    "items": [
+      { "name": "llama3-70b-pretrain",  "cluster": "helios", "kind": "TRAINING_JOB",      "gpus": 40 },
+      { "name": "mixtral-8x7b-finetune", "cluster": "helios", "kind": "TRAINING_JOB",      "gpus": 16 },
+      { "name": "chat-api",              "cluster": "atlas",  "kind": "INFERENCE_SERVICE", "gpus": 10 },
+      { "name": "search-rerank",         "cluster": "atlas",  "kind": "INFERENCE_SERVICE", "gpus": 10 },
+      { "name": "embeddings",            "cluster": "atlas",  "kind": "INFERENCE_SERVICE", "gpus": 8 },
+      { "name": "code-assist",           "cluster": "atlas",  "kind": "INFERENCE_SERVICE", "gpus": 8 },
+      { "name": "vision-ocr",            "cluster": "orion",  "kind": "INFERENCE_SERVICE", "gpus": 12 },
+      { "name": "speech-to-text",        "cluster": "orion",  "kind": "INFERENCE_SERVICE", "gpus": 10 },
+      { "name": "summarizer",            "cluster": "orion",  "kind": "INFERENCE_SERVICE", "gpus": 8 },
+      { "name": "moderation",            "cluster": "orion",  "kind": "INFERENCE_SERVICE", "gpus": 6 }
+    ]
+  },
+  "bandPct": { "idle": 20, "under": 30, "normal": 40, "over": 10 },
+  "utilization": { "fleetRangePct": [30.0, 40.0] },
+  "storage": { "fleetTargetPct": 46.0, "fleetRangePct": [42.0, 50.0] },
+  "trend": { "week_fleet_util_pct_range": [25.0, 45.0] },
+  "overrides": {
+    "gpu": { "helios-node-r01-idx05-gpu-6": { "temperatureC": 89.0, "powerDrawW": 690.0 } },
+    "filesystem": {}
+  }
+}

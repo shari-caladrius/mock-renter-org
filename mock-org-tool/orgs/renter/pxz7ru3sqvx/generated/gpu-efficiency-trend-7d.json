@@ -1,0 +1,72 @@
+{
+    "success": true,
+    "message": "GPU efficiency trend fetched successfully",
+    "data": {
+        "days": [
+            {
+                "date": "2026-11-06",
+                "avgFleetUtil": 37.6,
+                "idleCount": 43,
+                "underCount": 35,
+                "normalCount": 57,
+                "overCount": 25,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-07",
+                "avgFleetUtil": 26.7,
+                "idleCount": 13,
+                "underCount": 113,
+                "normalCount": 18,
+                "overCount": 16,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-08",
+                "avgFleetUtil": 48.1,
+                "idleCount": 34,
+                "underCount": 38,
+                "normalCount": 30,
+                "overCount": 58,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-09",
+                "avgFleetUtil": 22.7,
+                "idleCount": 34,
+                "underCount": 98,
+                "normalCount": 12,
+                "overCount": 16,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-10",
+                "avgFleetUtil": 47.7,
+                "idleCount": 34,
+                "underCount": 22,
+                "normalCount": 70,
+                "overCount": 34,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-11",
+                "avgFleetUtil": 23.9,
+                "idleCount": 23,
+                "underCount": 100,
+                "normalCount": 35,
+                "overCount": 2,
+                "totalDevices": 160
+            },
+            {
+                "date": "2026-11-12",
+                "avgFleetUtil": 36.4,
+                "idleCount": 32,
+                "underCount": 48,
+                "normalCount": 64,
+                "overCount": 16,
+                "totalDevices": 160
+            }
+        ],
+        "durationDays": 7
+    }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "_id": {
+      "$oid": "e773ef465739f1b778f8a73f"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "clusterName": "helios",
+    "clusterType": "SLURMCLUSTER",
+    "instances": [
+      {
+        "entityName": "helios-node-r01-idx01",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx02",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx03",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx04",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx05",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx06",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx07",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "helios-node-r01-idx08",
+        "priceCentsPerHour": 3192
+      }
+    ],
+    "updatedAt": {
+      "$numberLong": "1792749005850"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "cad0e318a700279b2ef79fd3"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "clusterName": "atlas",
+    "clusterType": "KUBERNETESCLUSTER",
+    "instances": [
+      {
+        "entityName": "atlas-node-r01-idx01",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "atlas-node-r01-idx02",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "atlas-node-r01-idx03",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "atlas-node-r01-idx04",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "atlas-node-r01-idx05",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "atlas-node-r01-idx06",
+        "priceCentsPerHour": 3192
+      }
+    ],
+    "updatedAt": {
+      "$numberLong": "1792928165189"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  },
+  {
+    "_id": {
+      "$oid": "2d7314eb4de30f3e50cd0e60"
+    },
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "clusterName": "orion",
+    "clusterType": "KUBERNETESCLUSTER",
+    "instances": [
+      {
+        "entityName": "orion-node-r01-idx01",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "orion-node-r01-idx02",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "orion-node-r01-idx03",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "orion-node-r01-idx04",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "orion-node-r01-idx05",
+        "priceCentsPerHour": 3192
+      },
+      {
+        "entityName": "orion-node-r01-idx06",
+        "priceCentsPerHour": 3192
+      }
+    ],
+    "updatedAt": {
+      "$numberLong": "1793910305129"
+    },
+    "updatedBy": "d83aa259-c2d5-5dc5-a8a0-7253f76b4c47"
+  }
+]

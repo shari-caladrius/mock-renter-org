@@ -1,0 +1,4344 @@
+{
+    "success": true,
+    "message": "data retrieved successfully",
+    "data": {
+        "summary": {
+            "totalGpuDevices": 160,
+            "totalInstances": 20,
+            "totalClusters": 3,
+            "standaloneInstances": 0,
+            "avgUtilizationPct": 36.4,
+            "avgTemperatureC": 54.1,
+            "avgMemoryUsedPct": 53.7,
+            "avgPowerDrawW": 316
+        },
+        "clusters": [
+            {
+                "name": "helios",
+                "infra": "Slurm",
+                "instanceCount": 8,
+                "totalGpuDevices": 64,
+                "avgUtilizationPct": 42.9
+            },
+            {
+                "name": "atlas",
+                "infra": "K8s",
+                "instanceCount": 6,
+                "totalGpuDevices": 48,
+                "avgUtilizationPct": 27
+            },
+            {
+                "name": "orion",
+                "infra": "K8s",
+                "instanceCount": 6,
+                "totalGpuDevices": 48,
+                "avgUtilizationPct": 37.3
+            }
+        ],
+        "standaloneInstances": null,
+        "gpuDevices": [
+            {
+                "name": "helios-node-r01-idx01-gpu-0",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 86.4,
+                "temperatureC": 77.7,
+                "memoryUsedMib": 103962.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 610.8
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-1",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 79,
+                "temperatureC": 74.3,
+                "memoryUsedMib": 104253.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 601.9
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-2",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 95.9,
+                "temperatureC": 81.7,
+                "memoryUsedMib": 107683.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 692.4
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-3",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.9,
+                "memoryUsedMib": 2477.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 80.1
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-4",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34.4,
+                "memoryUsedMib": 4959,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 85.1
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-5",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.4,
+                "memoryUsedMib": 6037.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 73.3
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-6",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.9,
+                "memoryUsedMib": 3604.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.6
+            },
+            {
+                "name": "helios-node-r01-idx01-gpu-7",
+                "parent": "helios-node-r01-idx01",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 35,
+                "memoryUsedMib": 5307.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 87.7
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-0",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 68.2,
+                "temperatureC": 66.8,
+                "memoryUsedMib": 103293,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 537.2
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-1",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 60.4,
+                "temperatureC": 67.4,
+                "memoryUsedMib": 103050.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 437.7
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-2",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 49.4,
+                "temperatureC": 60.5,
+                "memoryUsedMib": 109876.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 381.7
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-3",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 56.9,
+                "temperatureC": 63.3,
+                "memoryUsedMib": 101453.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 446.8
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-4",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 72.3,
+                "temperatureC": 70.3,
+                "memoryUsedMib": 102405,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 559
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-5",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 66.1,
+                "temperatureC": 67.1,
+                "memoryUsedMib": 109242.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 487.6
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-6",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 48.9,
+                "temperatureC": 59,
+                "memoryUsedMib": 109650.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 400.7
+            },
+            {
+                "name": "helios-node-r01-idx02-gpu-7",
+                "parent": "helios-node-r01-idx02",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 36.2,
+                "memoryUsedMib": 5095.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 81.2
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-0",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 65.2,
+                "temperatureC": 65.4,
+                "memoryUsedMib": 106919.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 487.3
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-1",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 78.7,
+                "temperatureC": 74,
+                "memoryUsedMib": 104772.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 586.2
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-2",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 77.1,
+                "temperatureC": 71.9,
+                "memoryUsedMib": 102501,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 592
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-3",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 59.5,
+                "temperatureC": 64.5,
+                "memoryUsedMib": 93494.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 470.5
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-4",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 59.6,
+                "temperatureC": 68.9,
+                "memoryUsedMib": 93099,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 450.5
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-5",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 59.3,
+                "temperatureC": 66.4,
+                "memoryUsedMib": 86821.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 432.5
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-6",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 49.7,
+                "temperatureC": 61.4,
+                "memoryUsedMib": 87558.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 407.9
+            },
+            {
+                "name": "helios-node-r01-idx03-gpu-7",
+                "parent": "helios-node-r01-idx03",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 52.8,
+                "temperatureC": 55.5,
+                "memoryUsedMib": 91175.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 433.3
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-0",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 55.8,
+                "temperatureC": 65.3,
+                "memoryUsedMib": 98375.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 414.4
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-1",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 90.4,
+                "temperatureC": 80.9,
+                "memoryUsedMib": 97528,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 666
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-2",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 63.1,
+                "temperatureC": 68.7,
+                "memoryUsedMib": 91335.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 439.5
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-3",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 91.4,
+                "temperatureC": 77.7,
+                "memoryUsedMib": 93111.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 663.7
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-4",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 93.3,
+                "temperatureC": 80.4,
+                "memoryUsedMib": 93187.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 660
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-5",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.3,
+                "memoryUsedMib": 4044.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 77.7
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-6",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.8,
+                "memoryUsedMib": 5073.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 74.6
+            },
+            {
+                "name": "helios-node-r01-idx04-gpu-7",
+                "parent": "helios-node-r01-idx04",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.8,
+                "memoryUsedMib": 5711.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 72.2
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-0",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 76.2,
+                "temperatureC": 71.7,
+                "memoryUsedMib": 88126.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 541.3
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-1",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 92.3,
+                "temperatureC": 80.3,
+                "memoryUsedMib": 86793.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 667.3
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-2",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 54.3,
+                "temperatureC": 61,
+                "memoryUsedMib": 87066,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 455.2
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-3",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 68,
+                "temperatureC": 67,
+                "memoryUsedMib": 92934.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 503.7
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-4",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 60.7,
+                "temperatureC": 65,
+                "memoryUsedMib": 88037.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 450.9
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-5",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 68,
+                "temperatureC": 69.3,
+                "memoryUsedMib": 93791.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 516.6
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-6",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 29.1,
+                "memoryUsedMib": 2396.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 80.7
+            },
+            {
+                "name": "helios-node-r01-idx05-gpu-7",
+                "parent": "helios-node-r01-idx05",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34,
+                "memoryUsedMib": 6510.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 86.7
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-0",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 50.1,
+                "temperatureC": 55.5,
+                "memoryUsedMib": 95589.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 358.2
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-1",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 62.2,
+                "temperatureC": 67,
+                "memoryUsedMib": 96199.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 463.5
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-2",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.6,
+                "temperatureC": 45.9,
+                "memoryUsedMib": 99733,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 169.7
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-3",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 17.3,
+                "temperatureC": 48.1,
+                "memoryUsedMib": 89785.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 209.8
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-4",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 87.9,
+                "temperatureC": 76.2,
+                "memoryUsedMib": 98948.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 627
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-5",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 87.2,
+                "temperatureC": 79.8,
+                "memoryUsedMib": 102828.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 647.1
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-6",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 85.7,
+                "temperatureC": 76.5,
+                "memoryUsedMib": 98063.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 586.7
+            },
+            {
+                "name": "helios-node-r01-idx06-gpu-7",
+                "parent": "helios-node-r01-idx06",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 48.6,
+                "temperatureC": 62.2,
+                "memoryUsedMib": 90346.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 406.6
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-0",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 8.4,
+                "temperatureC": 43.5,
+                "memoryUsedMib": 97900,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 147
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-1",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 8.4,
+                "temperatureC": 42.2,
+                "memoryUsedMib": 90451,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 136
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-2",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 89.3,
+                "temperatureC": 76,
+                "memoryUsedMib": 94178.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 589.4
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-3",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 12.1,
+                "temperatureC": 45,
+                "memoryUsedMib": 97986.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 234.6
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-4",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 13.4,
+                "temperatureC": 46.3,
+                "memoryUsedMib": 96744,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 165
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-5",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.3,
+                "temperatureC": 47.5,
+                "memoryUsedMib": 97782.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 172.4
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-6",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 9.1,
+                "temperatureC": 41.5,
+                "memoryUsedMib": 84659.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 178.6
+            },
+            {
+                "name": "helios-node-r01-idx07-gpu-7",
+                "parent": "helios-node-r01-idx07",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.7,
+                "memoryUsedMib": 5052.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 78.3
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-0",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 22,
+                "temperatureC": 48.5,
+                "memoryUsedMib": 95551.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 251.4
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-1",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.9,
+                "temperatureC": 50.1,
+                "memoryUsedMib": 85705.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 211
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-2",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14,
+                "temperatureC": 48.8,
+                "memoryUsedMib": 85287.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 166.9
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-3",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 36.9,
+                "temperatureC": 55.7,
+                "memoryUsedMib": 87802.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 296.2
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-4",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.2,
+                "temperatureC": 47.9,
+                "memoryUsedMib": 89707.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 195.8
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-5",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 10.8,
+                "temperatureC": 46.3,
+                "memoryUsedMib": 88458.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 142.2
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-6",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.9,
+                "temperatureC": 48.6,
+                "memoryUsedMib": 88568.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 167.3
+            },
+            {
+                "name": "helios-node-r01-idx08-gpu-7",
+                "parent": "helios-node-r01-idx08",
+                "cluster": "helios",
+                "infra": "Slurm",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 36.7,
+                "memoryUsedMib": 4886.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.9
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-0",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 67.1,
+                "temperatureC": 66.1,
+                "memoryUsedMib": 107592,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 541.8
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-1",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 56.1,
+                "temperatureC": 62.2,
+                "memoryUsedMib": 104867.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 431.4
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-2",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 61,
+                "temperatureC": 69.6,
+                "memoryUsedMib": 108810.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 485.4
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-3",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 48.9,
+                "temperatureC": 62.9,
+                "memoryUsedMib": 104495.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 418.7
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-4",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 57.6,
+                "temperatureC": 67.2,
+                "memoryUsedMib": 104870.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 429.3
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-5",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 89.3,
+                "temperatureC": 77.8,
+                "memoryUsedMib": 106366.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 632.2
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-6",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 55.8,
+                "temperatureC": 65.9,
+                "memoryUsedMib": 108477.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 415.3
+            },
+            {
+                "name": "atlas-node-r01-idx01-gpu-7",
+                "parent": "atlas-node-r01-idx01",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 98.2,
+                "temperatureC": 83,
+                "memoryUsedMib": 104338.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 700
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-0",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 55.9,
+                "temperatureC": 64.5,
+                "memoryUsedMib": 100442.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 427.6
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-1",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 65.1,
+                "temperatureC": 68,
+                "memoryUsedMib": 103740.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 492.9
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-2",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.9,
+                "temperatureC": 48.2,
+                "memoryUsedMib": 87061.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 221.6
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-3",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.1,
+                "temperatureC": 49,
+                "memoryUsedMib": 84254.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 218.9
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-4",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 9.3,
+                "temperatureC": 45.2,
+                "memoryUsedMib": 76456.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 170.4
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-5",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.2,
+                "temperatureC": 46.5,
+                "memoryUsedMib": 80679.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 221.5
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-6",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 29.7,
+                "memoryUsedMib": 4388.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 80.9
+            },
+            {
+                "name": "atlas-node-r01-idx02-gpu-7",
+                "parent": "atlas-node-r01-idx02",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 32.8,
+                "memoryUsedMib": 5373.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.4
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-0",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 64.4,
+                "temperatureC": 67.2,
+                "memoryUsedMib": 87778.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 486.8
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-1",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 8.6,
+                "temperatureC": 43.1,
+                "memoryUsedMib": 113009.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 196.9
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-2",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.6,
+                "temperatureC": 45,
+                "memoryUsedMib": 111335.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 206.2
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-3",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 16.6,
+                "temperatureC": 45.4,
+                "memoryUsedMib": 107012.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 189.2
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-4",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 9.4,
+                "temperatureC": 43.8,
+                "memoryUsedMib": 113176.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 143.1
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-5",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 50,
+                "temperatureC": 63.6,
+                "memoryUsedMib": 110179.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 373.7
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-6",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34.2,
+                "memoryUsedMib": 4420,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.2
+            },
+            {
+                "name": "atlas-node-r01-idx03-gpu-7",
+                "parent": "atlas-node-r01-idx03",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31,
+                "memoryUsedMib": 3764.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 83.1
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-0",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.1,
+                "temperatureC": 47.8,
+                "memoryUsedMib": 98463.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 231.6
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-1",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 32.5,
+                "temperatureC": 56,
+                "memoryUsedMib": 90945.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 310.5
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-2",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 8.7,
+                "temperatureC": 45.9,
+                "memoryUsedMib": 95402.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 118.6
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-3",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.3,
+                "temperatureC": 44,
+                "memoryUsedMib": 87652.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 189.5
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-4",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.9,
+                "temperatureC": 45.9,
+                "memoryUsedMib": 93195,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 231.8
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-5",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 48.2,
+                "temperatureC": 58.5,
+                "memoryUsedMib": 89234.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 355
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-6",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.3,
+                "temperatureC": 49.2,
+                "memoryUsedMib": 97875.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 186.3
+            },
+            {
+                "name": "atlas-node-r01-idx04-gpu-7",
+                "parent": "atlas-node-r01-idx04",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.9,
+                "memoryUsedMib": 5282.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.9
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-0",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.9,
+                "temperatureC": 45,
+                "memoryUsedMib": 90836,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 217.2
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-1",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 36.6,
+                "temperatureC": 55.5,
+                "memoryUsedMib": 89873.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 306.4
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-2",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.1,
+                "temperatureC": 47.4,
+                "memoryUsedMib": 89525.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 217.8
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-3",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 10.3,
+                "temperatureC": 47.5,
+                "memoryUsedMib": 93751.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 158
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-4",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.5,
+                "temperatureC": 45.3,
+                "memoryUsedMib": 100346.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 225.4
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-5",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 16.8,
+                "temperatureC": 44.7,
+                "memoryUsedMib": 99816.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 207.6
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-6",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 52.2,
+                "temperatureC": 60.7,
+                "memoryUsedMib": 99057.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 420
+            },
+            {
+                "name": "atlas-node-r01-idx05-gpu-7",
+                "parent": "atlas-node-r01-idx05",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.4,
+                "temperatureC": 48.5,
+                "memoryUsedMib": 96472.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 171.5
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-0",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 15.5,
+                "temperatureC": 43.9,
+                "memoryUsedMib": 106459.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 229.6
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-1",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 39.8,
+                "temperatureC": 58.1,
+                "memoryUsedMib": 105182.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 315
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-2",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.7,
+                "temperatureC": 44.2,
+                "memoryUsedMib": 102692.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 230.9
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-3",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 37.5,
+                "memoryUsedMib": 4647.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 92.2
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-4",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.8,
+                "memoryUsedMib": 3396.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 73.2
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-5",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34.9,
+                "memoryUsedMib": 3390.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 87.1
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-6",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 33.2,
+                "memoryUsedMib": 3491.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 81.4
+            },
+            {
+                "name": "atlas-node-r01-idx06-gpu-7",
+                "parent": "atlas-node-r01-idx06",
+                "cluster": "atlas",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 32.7,
+                "memoryUsedMib": 4204.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 74.9
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-0",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 61.3,
+                "temperatureC": 68.8,
+                "memoryUsedMib": 86742.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 517.2
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-1",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 61.6,
+                "temperatureC": 67.4,
+                "memoryUsedMib": 80019.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 478.1
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-2",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 49,
+                "temperatureC": 61,
+                "memoryUsedMib": 72553,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 402.3
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-3",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 89.6,
+                "temperatureC": 79.6,
+                "memoryUsedMib": 78030.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 654
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-4",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 64.8,
+                "temperatureC": 67.5,
+                "memoryUsedMib": 81981.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 499.3
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-5",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 61.6,
+                "temperatureC": 69,
+                "memoryUsedMib": 74449.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 458.7
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-6",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34.1,
+                "memoryUsedMib": 4777.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 73.3
+            },
+            {
+                "name": "orion-node-r01-idx01-gpu-7",
+                "parent": "orion-node-r01-idx01",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.7,
+                "memoryUsedMib": 3441.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 91.2
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-0",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 91.7,
+                "temperatureC": 81.7,
+                "memoryUsedMib": 79706.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 654.2
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-1",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 79,
+                "temperatureC": 74.7,
+                "memoryUsedMib": 88589.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 606.7
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-2",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 75.8,
+                "temperatureC": 73.2,
+                "memoryUsedMib": 80482.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 561
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-3",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 32.4,
+                "memoryUsedMib": 4675.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 82.9
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-4",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31.1,
+                "memoryUsedMib": 4367.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 74.9
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-5",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 34.8,
+                "memoryUsedMib": 3367,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 78.5
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-6",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 37.1,
+                "memoryUsedMib": 3451.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 77.4
+            },
+            {
+                "name": "orion-node-r01-idx02-gpu-7",
+                "parent": "orion-node-r01-idx02",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 31,
+                "memoryUsedMib": 2924.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 79.7
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-0",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 66,
+                "temperatureC": 69.6,
+                "memoryUsedMib": 78312.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 461.5
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-1",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 94.6,
+                "temperatureC": 78.8,
+                "memoryUsedMib": 108978.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 700
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-2",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 64.2,
+                "temperatureC": 68.9,
+                "memoryUsedMib": 110246.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 495.6
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-3",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 73.3,
+                "temperatureC": 67.3,
+                "memoryUsedMib": 108589,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 517.8
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-4",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 93.1,
+                "temperatureC": 77.5,
+                "memoryUsedMib": 113563.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 644.2
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-5",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 67.6,
+                "temperatureC": 70.7,
+                "memoryUsedMib": 108279,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 513
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-6",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 54.6,
+                "temperatureC": 66.2,
+                "memoryUsedMib": 112793.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 443.7
+            },
+            {
+                "name": "orion-node-r01-idx03-gpu-7",
+                "parent": "orion-node-r01-idx03",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 53.2,
+                "temperatureC": 62.8,
+                "memoryUsedMib": 108634.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 401.4
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-0",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 57,
+                "temperatureC": 58.9,
+                "memoryUsedMib": 113962.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 465.2
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-1",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 54.8,
+                "temperatureC": 64.4,
+                "memoryUsedMib": 112409.6,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 407.5
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-2",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.9,
+                "temperatureC": 49.3,
+                "memoryUsedMib": 88887.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 212.8
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-3",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 10.8,
+                "temperatureC": 43.7,
+                "memoryUsedMib": 82969,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 200
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-4",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 13.9,
+                "temperatureC": 45.4,
+                "memoryUsedMib": 86519.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 168.4
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-5",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 22,
+                "temperatureC": 48.4,
+                "memoryUsedMib": 86442.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 242.4
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-6",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 17.7,
+                "temperatureC": 48.7,
+                "memoryUsedMib": 89750,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 221.8
+            },
+            {
+                "name": "orion-node-r01-idx04-gpu-7",
+                "parent": "orion-node-r01-idx04",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 12.2,
+                "temperatureC": 46,
+                "memoryUsedMib": 109624,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 122.9
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-0",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 48.5,
+                "temperatureC": 59.9,
+                "memoryUsedMib": 104001.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 422
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-1",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 17.4,
+                "temperatureC": 47,
+                "memoryUsedMib": 104335.8,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 218.7
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-2",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 11.8,
+                "temperatureC": 47.5,
+                "memoryUsedMib": 88598.3,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 114.4
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-3",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 19.9,
+                "temperatureC": 48.3,
+                "memoryUsedMib": 87412.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 212.1
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-4",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 38.1,
+                "temperatureC": 55.4,
+                "memoryUsedMib": 84404,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 323.7
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-5",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 18.9,
+                "temperatureC": 47.9,
+                "memoryUsedMib": 75947.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 218.3
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-6",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 29.8,
+                "memoryUsedMib": 6528.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 85.5
+            },
+            {
+                "name": "orion-node-r01-idx05-gpu-7",
+                "parent": "orion-node-r01-idx05",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 0,
+                "temperatureC": 32.4,
+                "memoryUsedMib": 3648,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 80.7
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-0",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 0,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 14.1,
+                "temperatureC": 46,
+                "memoryUsedMib": 92877.9,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 164.7
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-1",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 1,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 13.4,
+                "temperatureC": 47.4,
+                "memoryUsedMib": 92088.2,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 178.6
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-2",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 2,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 73.1,
+                "temperatureC": 66.7,
+                "memoryUsedMib": 89680.1,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 522
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-3",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 3,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 10.9,
+                "temperatureC": 45,
+                "memoryUsedMib": 101703.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 138.4
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-4",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 4,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 68.7,
+                "temperatureC": 67.9,
+                "memoryUsedMib": 93783.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 549.1
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-5",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 5,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 12.2,
+                "temperatureC": 42.5,
+                "memoryUsedMib": 98439.5,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 139.2
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-6",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 6,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 30.6,
+                "temperatureC": 52.6,
+                "memoryUsedMib": 89531.4,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 336.9
+            },
+            {
+                "name": "orion-node-r01-idx06-gpu-7",
+                "parent": "orion-node-r01-idx06",
+                "cluster": "orion",
+                "infra": "K8s",
+                "gpuIndex": 7,
+                "model": "NVIDIA H200 141GB HBM3e",
+                "utilizationPct": 7.9,
+                "temperatureC": 42.7,
+                "memoryUsedMib": 89299.7,
+                "memoryTotalMib": 144384,
+                "powerDrawW": 145.4
+            }
+        ],
+        "storage": {
+            "totalCapacityGib": 454656,
+            "totalUsedGib": 209141.8,
+            "totalFreeGib": 245514.2,
+            "utilPct": 46,
+            "filesystems": [
+                {
+                    "name": "helios-shared",
+                    "cluster": "helios",
+                    "fsType": "lustre",
+                    "mountPath": "/mnt/helios-shared",
+                    "capacityGib": 409600,
+                    "usedGib": 188027.5,
+                    "freeGib": 221572.5,
+                    "utilPct": 45.9
+                },
+                {
+                    "name": "atlas-node-r01-idx01-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx01-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1307.3,
+                    "freeGib": 2788.7,
+                    "utilPct": 31.9
+                },
+                {
+                    "name": "atlas-node-r01-idx02-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx02-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1448.1,
+                    "freeGib": 2647.9,
+                    "utilPct": 35.4
+                },
+                {
+                    "name": "atlas-node-r01-idx03-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx03-scratch",
+                    "capacityGib": 2048,
+                    "usedGib": 1109.6,
+                    "freeGib": 938.4,
+                    "utilPct": 54.2
+                },
+                {
+                    "name": "atlas-node-r01-idx04-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx04-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1276.7,
+                    "freeGib": 2819.3,
+                    "utilPct": 31.2
+                },
+                {
+                    "name": "atlas-node-r01-idx05-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx05-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 2376.7,
+                    "freeGib": 1719.3,
+                    "utilPct": 58
+                },
+                {
+                    "name": "atlas-node-r01-idx06-scratch",
+                    "cluster": "atlas",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/atlas-node-r01-idx06-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1907.4,
+                    "freeGib": 2188.6,
+                    "utilPct": 46.6
+                },
+                {
+                    "name": "orion-node-r01-idx01-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx01-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1534,
+                    "freeGib": 2562,
+                    "utilPct": 37.5
+                },
+                {
+                    "name": "orion-node-r01-idx02-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx02-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 2445.9,
+                    "freeGib": 1650.1,
+                    "utilPct": 59.7
+                },
+                {
+                    "name": "orion-node-r01-idx03-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx03-scratch",
+                    "capacityGib": 2048,
+                    "usedGib": 1270.9,
+                    "freeGib": 777.1,
+                    "utilPct": 62.1
+                },
+                {
+                    "name": "orion-node-r01-idx04-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx04-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1929.6,
+                    "freeGib": 2166.4,
+                    "utilPct": 47.1
+                },
+                {
+                    "name": "orion-node-r01-idx05-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx05-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 2627.5,
+                    "freeGib": 1468.5,
+                    "utilPct": 64.1
+                },
+                {
+                    "name": "orion-node-r01-idx06-scratch",
+                    "cluster": "orion",
+                    "fsType": "nvme",
+                    "mountPath": "/mnt/orion-node-r01-idx06-scratch",
+                    "capacityGib": 4096,
+                    "usedGib": 1880.6,
+                    "freeGib": 2215.4,
+                    "utilPct": 45.9
+                }
+            ]
+        },
+        "gpuEfficiency": {
+            "idle": [
+                {
+                    "name": "helios-node-r01-idx01-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx01-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx01-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx01-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx01-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 0
+                }
+            ],
+            "overUtilized": [
+                {
+                    "name": "helios-node-r01-idx01-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 86.4
+                },
+                {
+                    "name": "helios-node-r01-idx01-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 95.9
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 90.4
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 91.4
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 93.3
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 92.3
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 87.9
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 87.2
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 85.7
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 89.3
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 89.3
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 98.2
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 89.6
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 91.7
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 94.6
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 93.1
+                }
+            ],
+            "underUtilized": [
+                {
+                    "name": "helios-node-r01-idx06-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 14.6
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 17.3
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 8.4
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 8.4
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 12.1
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 13.4
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 15.3
+                },
+                {
+                    "name": "helios-node-r01-idx07-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 9.1
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 19.9
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 14
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 15.2
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 10.8
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 15.9
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.9
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.1
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 9.3
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.2
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 8.6
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.6
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 16.6
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 9.4
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 15.1
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 8.7
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.3
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.9
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.3
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.9
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 15.1
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 10.3
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.5
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 16.8
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-7",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 15.4
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 15.5
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.7
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.9
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 10.8
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 13.9
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 17.7
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 12.2
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 17.4
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 11.8
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 19.9
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 18.9
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 14.1
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 13.4
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 10.9
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 12.2
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 7.9
+                }
+            ],
+            "normal": [
+                {
+                    "name": "helios-node-r01-idx01-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 79
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 68.2
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 60.4
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 49.4
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 56.9
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 72.3
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 66.1
+                },
+                {
+                    "name": "helios-node-r01-idx02-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 48.9
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 65.2
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 78.7
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 77.1
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 59.5
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 59.6
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 59.3
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-6",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 49.7
+                },
+                {
+                    "name": "helios-node-r01-idx03-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 52.8
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 55.8
+                },
+                {
+                    "name": "helios-node-r01-idx04-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 63.1
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 76.2
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-2",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 54.3
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 68
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-4",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 60.7
+                },
+                {
+                    "name": "helios-node-r01-idx05-gpu-5",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 68
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 50.1
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-1",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 62.2
+                },
+                {
+                    "name": "helios-node-r01-idx06-gpu-7",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 48.6
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-0",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 22
+                },
+                {
+                    "name": "helios-node-r01-idx08-gpu-3",
+                    "cluster": "helios",
+                    "infra": "Slurm",
+                    "avgUtilPct": 36.9
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 67.1
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 56.1
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-2",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 61
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-3",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 48.9
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-4",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 57.6
+                },
+                {
+                    "name": "atlas-node-r01-idx01-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 55.8
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 55.9
+                },
+                {
+                    "name": "atlas-node-r01-idx02-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 65.1
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-0",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 64.4
+                },
+                {
+                    "name": "atlas-node-r01-idx03-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 50
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 32.5
+                },
+                {
+                    "name": "atlas-node-r01-idx04-gpu-5",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 48.2
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 36.6
+                },
+                {
+                    "name": "atlas-node-r01-idx05-gpu-6",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 52.2
+                },
+                {
+                    "name": "atlas-node-r01-idx06-gpu-1",
+                    "cluster": "atlas",
+                    "infra": "K8s",
+                    "avgUtilPct": 39.8
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 61.3
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 61.6
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 49
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 64.8
+                },
+                {
+                    "name": "orion-node-r01-idx01-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 61.6
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 79
+                },
+                {
+                    "name": "orion-node-r01-idx02-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 75.8
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 66
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 64.2
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-3",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 73.3
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 67.6
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 54.6
+                },
+                {
+                    "name": "orion-node-r01-idx03-gpu-7",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 53.2
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 57
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-1",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 54.8
+                },
+                {
+                    "name": "orion-node-r01-idx04-gpu-5",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 22
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-0",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 48.5
+                },
+                {
+                    "name": "orion-node-r01-idx05-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 38.1
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-2",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 73.1
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-4",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 68.7
+                },
+                {
+                    "name": "orion-node-r01-idx06-gpu-6",
+                    "cluster": "orion",
+                    "infra": "K8s",
+                    "avgUtilPct": 30.6
+                }
+            ],
+            "total": 160,
+            "idleTotal": 32,
+            "underTotal": 48,
+            "normalTotal": 64,
+            "overTotal": 16,
+            "avgFleetUtilPct": 36.4,
+            "durationHours": 168,
+            "dcgmDeviceCount": 0,
+            "mfuDeviceCount": 0
+        },
+        "costBreakdown": {
+            "fleetCostPerHour": 638.4,
+            "effectiveCostPerGpuHr": 3.99,
+            "wastedCapacityPerDay": 9744.54,
+            "avgFleetUtil": 36.4,
+            "byInstance": [
+                {
+                    "instanceName": "NVIDIA H200 141GB HBM3e",
+                    "priceCentsPerHour": 399,
+                    "costPerHour": 638.4,
+                    "gpuCount": 160
+                }
+            ]
+        },
+        "workloadBreakdown": {
+            "count": 22,
+            "byWorkload": [
+                {
+                    "workloadName": "deepseek-v3-dynamo-sglang-inference-helios"
+                },
+                {
+                    "workloadName": "llama-3-405b-dynamo-trtllm-inference-helios"
+                },
+                {
+                    "workloadName": "qwen2-72b-dynamo-vllm-endpoint-helios"
+                },
+                {
+                    "workloadName": "mixtral-8x7b-dynamo-service-helios"
+                },
+                {
+                    "workloadName": "deepseek-v3-dynamo-sglang-inference-atlas"
+                },
+                {
+                    "workloadName": "llama-3-405b-dynamo-trtllm-inference-atlas"
+                },
+                {
+                    "workloadName": "qwen2-72b-dynamo-vllm-endpoint-atlas"
+                },
+                {
+                    "workloadName": "mixtral-8x7b-dynamo-service-atlas"
+                },
+                {
+                    "workloadName": "command-r-plus-dynamo-tgi-api-atlas"
+                },
+                {
+                    "workloadName": "gemma-2-27b-dynamo-ray-serve-inference-atlas"
+                },
+                {
+                    "workloadName": "deepseek-v3-dynamo-sglang-inference-orion"
+                },
+                {
+                    "workloadName": "llama-3-405b-dynamo-trtllm-inference-orion"
+                },
+                {
+                    "workloadName": "qwen2-72b-dynamo-vllm-endpoint-orion"
+                },
+                {
+                    "workloadName": "mixtral-8x7b-dynamo-service-orion"
+                },
+                {
+                    "workloadName": "command-r-plus-dynamo-tgi-api-orion"
+                },
+                {
+                    "workloadName": "gemma-2-27b-dynamo-ray-serve-inference-orion"
+                },
+                {
+                    "workloadName": "llama-3-70b-pretrain-helios"
+                },
+                {
+                    "workloadName": "mistral-7b-instruct-sft-helios"
+                },
+                {
+                    "workloadName": "llama-3-8b-continued-pretrain-helios"
+                },
+                {
+                    "workloadName": "llama-3-70b-pretrain-atlas"
+                },
+                {
+                    "workloadName": "llama-3-70b-pretrain-orion"
+                },
+                {
+                    "workloadName": "mistral-7b-instruct-sft-orion"
+                }
+            ]
+        },
+        "workload": {
+            "INFERENCE_SERVICE": [
+                {
+                    "canonicalName": "deepseek-v3-dynamo-sglang-inference-helios",
+                    "name": "deepseek-v3-dynamo-sglang-inference-helios",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-2",
+                            "name": "helios-node-r01-idx06-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-3",
+                            "name": "helios-node-r01-idx06-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-4",
+                            "name": "helios-node-r01-idx06-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-5",
+                            "name": "helios-node-r01-idx06-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-6",
+                            "name": "helios-node-r01-idx06-gpu-6",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-07-26T06:38:00Z",
+                    "updatedAt": "2026-11-10T17:02:00Z",
+                    "avgUtilizationPct": 58.5,
+                    "avgTemperatureC": 65.3,
+                    "avgMemoryUsedPct": 67.8,
+                    "avgPowerDrawW": 448.1,
+                    "avgMemoryUsedMib": 97871.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-405b-dynamo-trtllm-inference-helios",
+                    "name": "llama-3-405b-dynamo-trtllm-inference-helios",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-7",
+                            "name": "helios-node-r01-idx06-gpu-7",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-0",
+                            "name": "helios-node-r01-idx07-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-1",
+                            "name": "helios-node-r01-idx07-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-2",
+                            "name": "helios-node-r01-idx07-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-3",
+                            "name": "helios-node-r01-idx07-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-4",
+                            "name": "helios-node-r01-idx07-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-5",
+                            "name": "helios-node-r01-idx07-gpu-5",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-09-08T00:37:00Z",
+                    "updatedAt": "2026-11-09T09:20:00Z",
+                    "avgUtilizationPct": 27.9,
+                    "avgTemperatureC": 51.8,
+                    "avgMemoryUsedPct": 65.8,
+                    "avgPowerDrawW": 264.4,
+                    "avgMemoryUsedMib": 95055.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "qwen2-72b-dynamo-vllm-endpoint-helios",
+                    "name": "qwen2-72b-dynamo-vllm-endpoint-helios",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx07-gpu-6",
+                            "name": "helios-node-r01-idx07-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-0",
+                            "name": "helios-node-r01-idx08-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-1",
+                            "name": "helios-node-r01-idx08-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-08-25T07:35:00Z",
+                    "updatedAt": "2026-11-11T05:26:00Z",
+                    "avgUtilizationPct": 17,
+                    "avgTemperatureC": 46.7,
+                    "avgMemoryUsedPct": 61.4,
+                    "avgPowerDrawW": 213.7,
+                    "avgMemoryUsedMib": 88638.6,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "mixtral-8x7b-dynamo-service-helios",
+                    "name": "mixtral-8x7b-dynamo-service-helios",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-2",
+                            "name": "helios-node-r01-idx08-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-3",
+                            "name": "helios-node-r01-idx08-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-4",
+                            "name": "helios-node-r01-idx08-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-5",
+                            "name": "helios-node-r01-idx08-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx08-gpu-6",
+                            "name": "helios-node-r01-idx08-gpu-6",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-09-29T17:38:00Z",
+                    "updatedAt": "2026-11-09T14:59:00Z",
+                    "avgUtilizationPct": 18.6,
+                    "avgTemperatureC": 49.5,
+                    "avgMemoryUsedPct": 60.9,
+                    "avgPowerDrawW": 193.7,
+                    "avgMemoryUsedMib": 87965.1,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "deepseek-v3-dynamo-sglang-inference-atlas",
+                    "name": "deepseek-v3-dynamo-sglang-inference-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-2",
+                            "name": "atlas-node-r01-idx02-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-3",
+                            "name": "atlas-node-r01-idx02-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-4",
+                            "name": "atlas-node-r01-idx02-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-5",
+                            "name": "atlas-node-r01-idx02-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-0",
+                            "name": "atlas-node-r01-idx03-gpu-0",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-08-30T12:44:00Z",
+                    "updatedAt": "2026-11-10T04:07:00Z",
+                    "avgUtilizationPct": 25.4,
+                    "avgTemperatureC": 51.2,
+                    "avgMemoryUsedPct": 57.7,
+                    "avgPowerDrawW": 263.8,
+                    "avgMemoryUsedMib": 83246.1,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-405b-dynamo-trtllm-inference-atlas",
+                    "name": "llama-3-405b-dynamo-trtllm-inference-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-1",
+                            "name": "atlas-node-r01-idx03-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-2",
+                            "name": "atlas-node-r01-idx03-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-3",
+                            "name": "atlas-node-r01-idx03-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-4",
+                            "name": "atlas-node-r01-idx03-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx03-gpu-5",
+                            "name": "atlas-node-r01-idx03-gpu-5",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-10T17:47:00Z",
+                    "updatedAt": "2026-11-11T20:51:00Z",
+                    "avgUtilizationPct": 19.8,
+                    "avgTemperatureC": 48.2,
+                    "avgMemoryUsedPct": 76.8,
+                    "avgPowerDrawW": 221.8,
+                    "avgMemoryUsedMib": 110942.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+                    "name": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-0",
+                            "name": "atlas-node-r01-idx04-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-1",
+                            "name": "atlas-node-r01-idx04-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-2",
+                            "name": "atlas-node-r01-idx04-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-3",
+                            "name": "atlas-node-r01-idx04-gpu-3",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-09-01T11:34:00Z",
+                    "updatedAt": "2026-11-10T04:36:00Z",
+                    "avgUtilizationPct": 17.6,
+                    "avgTemperatureC": 48.4,
+                    "avgMemoryUsedPct": 64.5,
+                    "avgPowerDrawW": 212.6,
+                    "avgMemoryUsedMib": 93115.9,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "mixtral-8x7b-dynamo-service-atlas",
+                    "name": "mixtral-8x7b-dynamo-service-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-4",
+                            "name": "atlas-node-r01-idx04-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-5",
+                            "name": "atlas-node-r01-idx04-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx04-gpu-6",
+                            "name": "atlas-node-r01-idx04-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-0",
+                            "name": "atlas-node-r01-idx05-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-1",
+                            "name": "atlas-node-r01-idx05-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-2",
+                            "name": "atlas-node-r01-idx05-gpu-2",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-09-29T16:19:00Z",
+                    "updatedAt": "2026-11-09T18:53:00Z",
+                    "avgUtilizationPct": 26.5,
+                    "avgTemperatureC": 50.2,
+                    "avgMemoryUsedPct": 63.6,
+                    "avgPowerDrawW": 252.4,
+                    "avgMemoryUsedMib": 91756.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "command-r-plus-dynamo-tgi-api-atlas",
+                    "name": "command-r-plus-dynamo-tgi-api-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-3",
+                            "name": "atlas-node-r01-idx05-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-4",
+                            "name": "atlas-node-r01-idx05-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-5",
+                            "name": "atlas-node-r01-idx05-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-6",
+                            "name": "atlas-node-r01-idx05-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx05-gpu-7",
+                            "name": "atlas-node-r01-idx05-gpu-7",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-09-10T10:21:00Z",
+                    "updatedAt": "2026-11-11T22:34:00Z",
+                    "avgUtilizationPct": 21.8,
+                    "avgTemperatureC": 49.3,
+                    "avgMemoryUsedPct": 67.8,
+                    "avgPowerDrawW": 236.5,
+                    "avgMemoryUsedMib": 97888.8,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+                    "name": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx06-gpu-0",
+                            "name": "atlas-node-r01-idx06-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx06-gpu-1",
+                            "name": "atlas-node-r01-idx06-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx06-gpu-2",
+                            "name": "atlas-node-r01-idx06-gpu-2",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-07-09T03:51:00Z",
+                    "updatedAt": "2026-11-10T16:28:00Z",
+                    "avgUtilizationPct": 25,
+                    "avgTemperatureC": 48.7,
+                    "avgMemoryUsedPct": 72.6,
+                    "avgPowerDrawW": 258.5,
+                    "avgMemoryUsedMib": 104778.3,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "deepseek-v3-dynamo-sglang-inference-orion",
+                    "name": "deepseek-v3-dynamo-sglang-inference-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-2",
+                            "name": "orion-node-r01-idx04-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-3",
+                            "name": "orion-node-r01-idx04-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-4",
+                            "name": "orion-node-r01-idx04-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-5",
+                            "name": "orion-node-r01-idx04-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-6",
+                            "name": "orion-node-r01-idx04-gpu-6",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-08-10T03:38:00Z",
+                    "updatedAt": "2026-11-11T15:08:00Z",
+                    "avgUtilizationPct": 15.9,
+                    "avgTemperatureC": 47.1,
+                    "avgMemoryUsedPct": 60.2,
+                    "avgPowerDrawW": 209.1,
+                    "avgMemoryUsedMib": 86913.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-405b-dynamo-trtllm-inference-orion",
+                    "name": "llama-3-405b-dynamo-trtllm-inference-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-7",
+                            "name": "orion-node-r01-idx04-gpu-7",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-0",
+                            "name": "orion-node-r01-idx05-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-1",
+                            "name": "orion-node-r01-idx05-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-08-04T16:08:00Z",
+                    "updatedAt": "2026-11-11T09:41:00Z",
+                    "avgUtilizationPct": 26,
+                    "avgTemperatureC": 51,
+                    "avgMemoryUsedPct": 73.4,
+                    "avgPowerDrawW": 254.5,
+                    "avgMemoryUsedMib": 105987,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "qwen2-72b-dynamo-vllm-endpoint-orion",
+                    "name": "qwen2-72b-dynamo-vllm-endpoint-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-2",
+                            "name": "orion-node-r01-idx05-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-3",
+                            "name": "orion-node-r01-idx05-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-4",
+                            "name": "orion-node-r01-idx05-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx05-gpu-5",
+                            "name": "orion-node-r01-idx05-gpu-5",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-07-09T11:29:00Z",
+                    "updatedAt": "2026-11-10T08:10:00Z",
+                    "avgUtilizationPct": 22.2,
+                    "avgTemperatureC": 49.8,
+                    "avgMemoryUsedPct": 58.2,
+                    "avgPowerDrawW": 217.1,
+                    "avgMemoryUsedMib": 84090.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "mixtral-8x7b-dynamo-service-orion",
+                    "name": "mixtral-8x7b-dynamo-service-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-0",
+                            "name": "orion-node-r01-idx06-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-1",
+                            "name": "orion-node-r01-idx06-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-2",
+                            "name": "orion-node-r01-idx06-gpu-2",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-07-14T15:08:00Z",
+                    "updatedAt": "2026-11-09T15:32:00Z",
+                    "avgUtilizationPct": 33.5,
+                    "avgTemperatureC": 53.4,
+                    "avgMemoryUsedPct": 63.4,
+                    "avgPowerDrawW": 288.4,
+                    "avgMemoryUsedMib": 91548.7,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "command-r-plus-dynamo-tgi-api-orion",
+                    "name": "command-r-plus-dynamo-tgi-api-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-3",
+                            "name": "orion-node-r01-idx06-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-4",
+                            "name": "orion-node-r01-idx06-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-5",
+                            "name": "orion-node-r01-idx06-gpu-5",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-05T04:03:00Z",
+                    "updatedAt": "2026-11-10T12:12:00Z",
+                    "avgUtilizationPct": 30.6,
+                    "avgTemperatureC": 51.8,
+                    "avgMemoryUsedPct": 67.9,
+                    "avgPowerDrawW": 275.6,
+                    "avgMemoryUsedMib": 97975.5,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "gemma-2-27b-dynamo-ray-serve-inference-orion",
+                    "name": "gemma-2-27b-dynamo-ray-serve-inference-orion",
+                    "subcategory": "INFERENCE_SERVICE",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-6",
+                            "name": "orion-node-r01-idx06-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx06-gpu-7",
+                            "name": "orion-node-r01-idx06-gpu-7",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-02T06:26:00Z",
+                    "updatedAt": "2026-11-10T06:24:00Z",
+                    "avgUtilizationPct": 19.2,
+                    "avgTemperatureC": 47.7,
+                    "avgMemoryUsedPct": 61.9,
+                    "avgPowerDrawW": 241.1,
+                    "avgMemoryUsedMib": 89415.5,
+                    "avgMemoryTotalMib": 144384
+                }
+            ],
+            "TRAINING_JOB": [
+                {
+                    "canonicalName": "llama-3-70b-pretrain-helios",
+                    "name": "llama-3-70b-pretrain-helios",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx01-gpu-0",
+                            "name": "helios-node-r01-idx01-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx01-gpu-1",
+                            "name": "helios-node-r01-idx01-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx01-gpu-2",
+                            "name": "helios-node-r01-idx01-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-0",
+                            "name": "helios-node-r01-idx02-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-1",
+                            "name": "helios-node-r01-idx02-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-2",
+                            "name": "helios-node-r01-idx02-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-3",
+                            "name": "helios-node-r01-idx02-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-4",
+                            "name": "helios-node-r01-idx02-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-5",
+                            "name": "helios-node-r01-idx02-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx02-gpu-6",
+                            "name": "helios-node-r01-idx02-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-0",
+                            "name": "helios-node-r01-idx03-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-1",
+                            "name": "helios-node-r01-idx03-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-30T03:55:00Z",
+                    "updatedAt": "2026-11-11T14:36:00Z",
+                    "avgUtilizationPct": 69,
+                    "avgTemperatureC": 69,
+                    "avgMemoryUsedPct": 73.1,
+                    "avgPowerDrawW": 519.1,
+                    "avgMemoryUsedMib": 105547,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "mistral-7b-instruct-sft-helios",
+                    "name": "mistral-7b-instruct-sft-helios",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-2",
+                            "name": "helios-node-r01-idx03-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-3",
+                            "name": "helios-node-r01-idx03-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-4",
+                            "name": "helios-node-r01-idx03-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-5",
+                            "name": "helios-node-r01-idx03-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-6",
+                            "name": "helios-node-r01-idx03-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx03-gpu-7",
+                            "name": "helios-node-r01-idx03-gpu-7",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx04-gpu-0",
+                            "name": "helios-node-r01-idx04-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx04-gpu-1",
+                            "name": "helios-node-r01-idx04-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx04-gpu-2",
+                            "name": "helios-node-r01-idx04-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx04-gpu-3",
+                            "name": "helios-node-r01-idx04-gpu-3",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-11-04T19:31:00Z",
+                    "updatedAt": "2026-11-12T02:30:00Z",
+                    "avgUtilizationPct": 65.9,
+                    "avgTemperatureC": 68.1,
+                    "avgMemoryUsedPct": 64.8,
+                    "avgPowerDrawW": 497,
+                    "avgMemoryUsedMib": 93500.1,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-8b-continued-pretrain-helios",
+                    "name": "llama-3-8b-continued-pretrain-helios",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "helios",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "helios-node-r01-idx04-gpu-4",
+                            "name": "helios-node-r01-idx04-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-0",
+                            "name": "helios-node-r01-idx05-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-1",
+                            "name": "helios-node-r01-idx05-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-2",
+                            "name": "helios-node-r01-idx05-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-3",
+                            "name": "helios-node-r01-idx05-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-4",
+                            "name": "helios-node-r01-idx05-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx05-gpu-5",
+                            "name": "helios-node-r01-idx05-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-0",
+                            "name": "helios-node-r01-idx06-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "helios-node-r01-idx06-gpu-1",
+                            "name": "helios-node-r01-idx06-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-25T10:14:00Z",
+                    "updatedAt": "2026-11-11T02:26:00Z",
+                    "avgUtilizationPct": 69.5,
+                    "avgTemperatureC": 68.6,
+                    "avgMemoryUsedPct": 63.2,
+                    "avgPowerDrawW": 513,
+                    "avgMemoryUsedMib": 91302.9,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-70b-pretrain-atlas",
+                    "name": "llama-3-70b-pretrain-atlas",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "atlas",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-0",
+                            "name": "atlas-node-r01-idx01-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-1",
+                            "name": "atlas-node-r01-idx01-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-2",
+                            "name": "atlas-node-r01-idx01-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-3",
+                            "name": "atlas-node-r01-idx01-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-4",
+                            "name": "atlas-node-r01-idx01-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-5",
+                            "name": "atlas-node-r01-idx01-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-6",
+                            "name": "atlas-node-r01-idx01-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx01-gpu-7",
+                            "name": "atlas-node-r01-idx01-gpu-7",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-0",
+                            "name": "atlas-node-r01-idx02-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "atlas-node-r01-idx02-gpu-1",
+                            "name": "atlas-node-r01-idx02-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-22T16:49:00Z",
+                    "updatedAt": "2026-11-11T09:06:00Z",
+                    "avgUtilizationPct": 65.5,
+                    "avgTemperatureC": 68.7,
+                    "avgMemoryUsedPct": 73,
+                    "avgPowerDrawW": 497.5,
+                    "avgMemoryUsedMib": 105400,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "llama-3-70b-pretrain-orion",
+                    "name": "llama-3-70b-pretrain-orion",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-0",
+                            "name": "orion-node-r01-idx01-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-1",
+                            "name": "orion-node-r01-idx01-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-2",
+                            "name": "orion-node-r01-idx01-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-3",
+                            "name": "orion-node-r01-idx01-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-4",
+                            "name": "orion-node-r01-idx01-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx01-gpu-5",
+                            "name": "orion-node-r01-idx01-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx02-gpu-0",
+                            "name": "orion-node-r01-idx02-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx02-gpu-1",
+                            "name": "orion-node-r01-idx02-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx02-gpu-2",
+                            "name": "orion-node-r01-idx02-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-0",
+                            "name": "orion-node-r01-idx03-gpu-0",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-11-06T16:09:00Z",
+                    "updatedAt": "2026-11-12T04:59:00Z",
+                    "avgUtilizationPct": 70,
+                    "avgTemperatureC": 71.2,
+                    "avgMemoryUsedPct": 55.5,
+                    "avgPowerDrawW": 529.3,
+                    "avgMemoryUsedMib": 80086.8,
+                    "avgMemoryTotalMib": 144384
+                },
+                {
+                    "canonicalName": "mistral-7b-instruct-sft-orion",
+                    "name": "mistral-7b-instruct-sft-orion",
+                    "subcategory": "TRAINING_JOB",
+                    "category": "WORKLOAD",
+                    "cluster": "orion",
+                    "gpu_devices": [
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-1",
+                            "name": "orion-node-r01-idx03-gpu-1",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-2",
+                            "name": "orion-node-r01-idx03-gpu-2",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-3",
+                            "name": "orion-node-r01-idx03-gpu-3",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-4",
+                            "name": "orion-node-r01-idx03-gpu-4",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-5",
+                            "name": "orion-node-r01-idx03-gpu-5",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-6",
+                            "name": "orion-node-r01-idx03-gpu-6",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx03-gpu-7",
+                            "name": "orion-node-r01-idx03-gpu-7",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-0",
+                            "name": "orion-node-r01-idx04-gpu-0",
+                            "type": "RUNS_ON"
+                        },
+                        {
+                            "canonicalName": "orion-node-r01-idx04-gpu-1",
+                            "name": "orion-node-r01-idx04-gpu-1",
+                            "type": "RUNS_ON"
+                        }
+                    ],
+                    "createdAt": "2026-10-24T00:28:00Z",
+                    "updatedAt": "2026-11-11T16:22:00Z",
+                    "avgUtilizationPct": 68,
+                    "avgTemperatureC": 68.4,
+                    "avgMemoryUsedPct": 76.8,
+                    "avgPowerDrawW": 509.8,
+                    "avgMemoryUsedMib": 110828.4,
+                    "avgMemoryTotalMib": 144384
+                }
+            ]
+        }
+    }
+}

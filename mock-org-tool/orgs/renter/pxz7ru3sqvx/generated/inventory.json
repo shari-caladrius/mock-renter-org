@@ -1,0 +1,2472 @@
+{
+  "snapshot": "2026-11-12T16:35:05Z",
+  "org": {
+    "orgId": "6679f5a9-398f-4b58-b04d-e5d263ec2039",
+    "orgName": "yedol22330.jcaton.com"
+  },
+  "totals": {
+    "clusters": 3,
+    "nodes": 20,
+    "gpus": 160,
+    "workloads": 22,
+    "storage": 13
+  },
+  "clusters": [
+    {
+      "name": "helios",
+      "alias": "Helios",
+      "kind": "slurm",
+      "infra": "Slurm",
+      "projectId": "4f1cd77bcc259baeb7acac4e",
+      "resourceId": "c28d75adb2453f988db0d3485384e9a60d5ca397af5e79c5a94974708e6f1d60",
+      "resourceDocId": "724efb73fd13d5bf5cf746c8",
+      "toolKey": "38a0974bd0f717fcd171595243354142feb81aa3a99bacd6b3289bb9017b0f58",
+      "delegateKey": "81a31e55afaf8b8b0eec5e37d57204b4b8cb9354844f28b5b2a3104fb7d4fcec",
+      "nodeCount": 8,
+      "gpuCount": 64,
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "metricRanges": {
+        "temperatureC": {
+          "idle": [
+            28,
+            38
+          ],
+          "busy": [
+            40,
+            83
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68,
+            94
+          ],
+          "busy": [
+            98,
+            700
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5
+          ],
+          "busy": [
+            45,
+            90
+          ]
+        }
+      },
+      "workloads": [
+        "llama-3-70b-pretrain-helios",
+        "mistral-7b-instruct-sft-helios",
+        "llama-3-8b-continued-pretrain-helios",
+        "deepseek-v3-dynamo-sglang-inference-helios",
+        "llama-3-405b-dynamo-trtllm-inference-helios",
+        "qwen2-72b-dynamo-vllm-endpoint-helios",
+        "mixtral-8x7b-dynamo-service-helios"
+      ],
+      "storage": [
+        "helios-shared"
+      ]
+    },
+    {
+      "name": "atlas",
+      "alias": "Atlas",
+      "kind": "k8s",
+      "infra": "K8s",
+      "projectId": "71d95e1e91b22bed62dfccbd",
+      "resourceId": "a8c6140028a7984c180eb2b741bbe30b75c4ad461a28f56e9499d8bb6f7bf306",
+      "resourceDocId": "f5efc189b945a6f2832e1805",
+      "toolKey": "13eb07a14b68ce5669727154a494daf993aaa7bb352fe7feb4452a00662b7faf",
+      "delegateKey": "a929f42a97a81d4f2b1809a201f7d934565c550ea34a8aef011f2aa6ef1571fb",
+      "nodeCount": 6,
+      "gpuCount": 48,
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "metricRanges": {
+        "temperatureC": {
+          "idle": [
+            28,
+            38
+          ],
+          "busy": [
+            40,
+            83
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68,
+            94
+          ],
+          "busy": [
+            98,
+            700
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5
+          ],
+          "busy": [
+            45,
+            90
+          ]
+        }
+      },
+      "workloads": [
+        "llama-3-70b-pretrain-atlas",
+        "deepseek-v3-dynamo-sglang-inference-atlas",
+        "llama-3-405b-dynamo-trtllm-inference-atlas",
+        "qwen2-72b-dynamo-vllm-endpoint-atlas",
+        "mixtral-8x7b-dynamo-service-atlas",
+        "command-r-plus-dynamo-tgi-api-atlas",
+        "gemma-2-27b-dynamo-ray-serve-inference-atlas"
+      ],
+      "storage": [
+        "atlas-node-r01-idx01-scratch",
+        "atlas-node-r01-idx02-scratch",
+        "atlas-node-r01-idx03-scratch",
+        "atlas-node-r01-idx04-scratch",
+        "atlas-node-r01-idx05-scratch",
+        "atlas-node-r01-idx06-scratch"
+      ]
+    },
+    {
+      "name": "orion",
+      "alias": "Orion",
+      "kind": "k8s",
+      "infra": "K8s",
+      "projectId": "3fded3116bf98273ac30e939",
+      "resourceId": "8b74ca573f264baa1ed9912aae6987454f6305ccf39b3c33f22e211c9a33dc60",
+      "resourceDocId": "f9fa70f81506659b7012e29e",
+      "toolKey": "3060adf9cbfe612d2b7eaa82778aa0b8d229c8ce5fa9463ae0dd894470156d83",
+      "delegateKey": "f2f674875cbc838036242b4a57be7deec0c97df33b9c413d4e28babe9ea41fde",
+      "nodeCount": 6,
+      "gpuCount": 48,
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "metricRanges": {
+        "temperatureC": {
+          "idle": [
+            28,
+            38
+          ],
+          "busy": [
+            40,
+            83
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68,
+            94
+          ],
+          "busy": [
+            98,
+            700
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5
+          ],
+          "busy": [
+            45,
+            90
+          ]
+        }
+      },
+      "workloads": [
+        "llama-3-70b-pretrain-orion",
+        "mistral-7b-instruct-sft-orion",
+        "deepseek-v3-dynamo-sglang-inference-orion",
+        "llama-3-405b-dynamo-trtllm-inference-orion",
+        "qwen2-72b-dynamo-vllm-endpoint-orion",
+        "mixtral-8x7b-dynamo-service-orion",
+        "command-r-plus-dynamo-tgi-api-orion",
+        "gemma-2-27b-dynamo-ray-serve-inference-orion"
+      ],
+      "storage": [
+        "orion-node-r01-idx01-scratch",
+        "orion-node-r01-idx02-scratch",
+        "orion-node-r01-idx03-scratch",
+        "orion-node-r01-idx04-scratch",
+        "orion-node-r01-idx05-scratch",
+        "orion-node-r01-idx06-scratch"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 1,
+      "gpus": [
+        "helios-node-r01-idx01-gpu-0",
+        "helios-node-r01-idx01-gpu-1",
+        "helios-node-r01-idx01-gpu-2",
+        "helios-node-r01-idx01-gpu-3",
+        "helios-node-r01-idx01-gpu-4",
+        "helios-node-r01-idx01-gpu-5",
+        "helios-node-r01-idx01-gpu-6",
+        "helios-node-r01-idx01-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 2,
+      "gpus": [
+        "helios-node-r01-idx02-gpu-0",
+        "helios-node-r01-idx02-gpu-1",
+        "helios-node-r01-idx02-gpu-2",
+        "helios-node-r01-idx02-gpu-3",
+        "helios-node-r01-idx02-gpu-4",
+        "helios-node-r01-idx02-gpu-5",
+        "helios-node-r01-idx02-gpu-6",
+        "helios-node-r01-idx02-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 3,
+      "gpus": [
+        "helios-node-r01-idx03-gpu-0",
+        "helios-node-r01-idx03-gpu-1",
+        "helios-node-r01-idx03-gpu-2",
+        "helios-node-r01-idx03-gpu-3",
+        "helios-node-r01-idx03-gpu-4",
+        "helios-node-r01-idx03-gpu-5",
+        "helios-node-r01-idx03-gpu-6",
+        "helios-node-r01-idx03-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 4,
+      "gpus": [
+        "helios-node-r01-idx04-gpu-0",
+        "helios-node-r01-idx04-gpu-1",
+        "helios-node-r01-idx04-gpu-2",
+        "helios-node-r01-idx04-gpu-3",
+        "helios-node-r01-idx04-gpu-4",
+        "helios-node-r01-idx04-gpu-5",
+        "helios-node-r01-idx04-gpu-6",
+        "helios-node-r01-idx04-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 5,
+      "gpus": [
+        "helios-node-r01-idx05-gpu-0",
+        "helios-node-r01-idx05-gpu-1",
+        "helios-node-r01-idx05-gpu-2",
+        "helios-node-r01-idx05-gpu-3",
+        "helios-node-r01-idx05-gpu-4",
+        "helios-node-r01-idx05-gpu-5",
+        "helios-node-r01-idx05-gpu-6",
+        "helios-node-r01-idx05-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 6,
+      "gpus": [
+        "helios-node-r01-idx06-gpu-0",
+        "helios-node-r01-idx06-gpu-1",
+        "helios-node-r01-idx06-gpu-2",
+        "helios-node-r01-idx06-gpu-3",
+        "helios-node-r01-idx06-gpu-4",
+        "helios-node-r01-idx06-gpu-5",
+        "helios-node-r01-idx06-gpu-6",
+        "helios-node-r01-idx06-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 7,
+      "gpus": [
+        "helios-node-r01-idx07-gpu-0",
+        "helios-node-r01-idx07-gpu-1",
+        "helios-node-r01-idx07-gpu-2",
+        "helios-node-r01-idx07-gpu-3",
+        "helios-node-r01-idx07-gpu-4",
+        "helios-node-r01-idx07-gpu-5",
+        "helios-node-r01-idx07-gpu-6",
+        "helios-node-r01-idx07-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "rack": "r01",
+      "index": 8,
+      "gpus": [
+        "helios-node-r01-idx08-gpu-0",
+        "helios-node-r01-idx08-gpu-1",
+        "helios-node-r01-idx08-gpu-2",
+        "helios-node-r01-idx08-gpu-3",
+        "helios-node-r01-idx08-gpu-4",
+        "helios-node-r01-idx08-gpu-5",
+        "helios-node-r01-idx08-gpu-6",
+        "helios-node-r01-idx08-gpu-7"
+      ],
+      "storage": "helios-shared"
+    },
+    {
+      "name": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 1,
+      "gpus": [
+        "atlas-node-r01-idx01-gpu-0",
+        "atlas-node-r01-idx01-gpu-1",
+        "atlas-node-r01-idx01-gpu-2",
+        "atlas-node-r01-idx01-gpu-3",
+        "atlas-node-r01-idx01-gpu-4",
+        "atlas-node-r01-idx01-gpu-5",
+        "atlas-node-r01-idx01-gpu-6",
+        "atlas-node-r01-idx01-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx01-scratch"
+    },
+    {
+      "name": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 2,
+      "gpus": [
+        "atlas-node-r01-idx02-gpu-0",
+        "atlas-node-r01-idx02-gpu-1",
+        "atlas-node-r01-idx02-gpu-2",
+        "atlas-node-r01-idx02-gpu-3",
+        "atlas-node-r01-idx02-gpu-4",
+        "atlas-node-r01-idx02-gpu-5",
+        "atlas-node-r01-idx02-gpu-6",
+        "atlas-node-r01-idx02-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx02-scratch"
+    },
+    {
+      "name": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 3,
+      "gpus": [
+        "atlas-node-r01-idx03-gpu-0",
+        "atlas-node-r01-idx03-gpu-1",
+        "atlas-node-r01-idx03-gpu-2",
+        "atlas-node-r01-idx03-gpu-3",
+        "atlas-node-r01-idx03-gpu-4",
+        "atlas-node-r01-idx03-gpu-5",
+        "atlas-node-r01-idx03-gpu-6",
+        "atlas-node-r01-idx03-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx03-scratch"
+    },
+    {
+      "name": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 4,
+      "gpus": [
+        "atlas-node-r01-idx04-gpu-0",
+        "atlas-node-r01-idx04-gpu-1",
+        "atlas-node-r01-idx04-gpu-2",
+        "atlas-node-r01-idx04-gpu-3",
+        "atlas-node-r01-idx04-gpu-4",
+        "atlas-node-r01-idx04-gpu-5",
+        "atlas-node-r01-idx04-gpu-6",
+        "atlas-node-r01-idx04-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx04-scratch"
+    },
+    {
+      "name": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 5,
+      "gpus": [
+        "atlas-node-r01-idx05-gpu-0",
+        "atlas-node-r01-idx05-gpu-1",
+        "atlas-node-r01-idx05-gpu-2",
+        "atlas-node-r01-idx05-gpu-3",
+        "atlas-node-r01-idx05-gpu-4",
+        "atlas-node-r01-idx05-gpu-5",
+        "atlas-node-r01-idx05-gpu-6",
+        "atlas-node-r01-idx05-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx05-scratch"
+    },
+    {
+      "name": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "rack": "r01",
+      "index": 6,
+      "gpus": [
+        "atlas-node-r01-idx06-gpu-0",
+        "atlas-node-r01-idx06-gpu-1",
+        "atlas-node-r01-idx06-gpu-2",
+        "atlas-node-r01-idx06-gpu-3",
+        "atlas-node-r01-idx06-gpu-4",
+        "atlas-node-r01-idx06-gpu-5",
+        "atlas-node-r01-idx06-gpu-6",
+        "atlas-node-r01-idx06-gpu-7"
+      ],
+      "storage": "atlas-node-r01-idx06-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 1,
+      "gpus": [
+        "orion-node-r01-idx01-gpu-0",
+        "orion-node-r01-idx01-gpu-1",
+        "orion-node-r01-idx01-gpu-2",
+        "orion-node-r01-idx01-gpu-3",
+        "orion-node-r01-idx01-gpu-4",
+        "orion-node-r01-idx01-gpu-5",
+        "orion-node-r01-idx01-gpu-6",
+        "orion-node-r01-idx01-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx01-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 2,
+      "gpus": [
+        "orion-node-r01-idx02-gpu-0",
+        "orion-node-r01-idx02-gpu-1",
+        "orion-node-r01-idx02-gpu-2",
+        "orion-node-r01-idx02-gpu-3",
+        "orion-node-r01-idx02-gpu-4",
+        "orion-node-r01-idx02-gpu-5",
+        "orion-node-r01-idx02-gpu-6",
+        "orion-node-r01-idx02-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx02-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 3,
+      "gpus": [
+        "orion-node-r01-idx03-gpu-0",
+        "orion-node-r01-idx03-gpu-1",
+        "orion-node-r01-idx03-gpu-2",
+        "orion-node-r01-idx03-gpu-3",
+        "orion-node-r01-idx03-gpu-4",
+        "orion-node-r01-idx03-gpu-5",
+        "orion-node-r01-idx03-gpu-6",
+        "orion-node-r01-idx03-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx03-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 4,
+      "gpus": [
+        "orion-node-r01-idx04-gpu-0",
+        "orion-node-r01-idx04-gpu-1",
+        "orion-node-r01-idx04-gpu-2",
+        "orion-node-r01-idx04-gpu-3",
+        "orion-node-r01-idx04-gpu-4",
+        "orion-node-r01-idx04-gpu-5",
+        "orion-node-r01-idx04-gpu-6",
+        "orion-node-r01-idx04-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx04-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 5,
+      "gpus": [
+        "orion-node-r01-idx05-gpu-0",
+        "orion-node-r01-idx05-gpu-1",
+        "orion-node-r01-idx05-gpu-2",
+        "orion-node-r01-idx05-gpu-3",
+        "orion-node-r01-idx05-gpu-4",
+        "orion-node-r01-idx05-gpu-5",
+        "orion-node-r01-idx05-gpu-6",
+        "orion-node-r01-idx05-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx05-scratch"
+    },
+    {
+      "name": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "rack": "r01",
+      "index": 6,
+      "gpus": [
+        "orion-node-r01-idx06-gpu-0",
+        "orion-node-r01-idx06-gpu-1",
+        "orion-node-r01-idx06-gpu-2",
+        "orion-node-r01-idx06-gpu-3",
+        "orion-node-r01-idx06-gpu-4",
+        "orion-node-r01-idx06-gpu-5",
+        "orion-node-r01-idx06-gpu-6",
+        "orion-node-r01-idx06-gpu-7"
+      ],
+      "storage": "orion-node-r01-idx06-scratch"
+    }
+  ],
+  "gpus": [
+    {
+      "name": "helios-node-r01-idx01-gpu-0",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "over",
+      "utilizationPct": 86.4
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-1",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 79
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-2",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "over",
+      "utilizationPct": 95.9
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-3",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 3,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-4",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 4,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-5",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 5,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-6",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx01-gpu-7",
+      "node": "helios-node-r01-idx01",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-0",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 68.2
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-1",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 60.4
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-2",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 49.4
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-3",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 56.9
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-4",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 72.3
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-5",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 66.1
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-6",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 6,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 48.9
+    },
+    {
+      "name": "helios-node-r01-idx02-gpu-7",
+      "node": "helios-node-r01-idx02",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-0",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 65.2
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-1",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 78.7
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-2",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 77.1
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-3",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 59.5
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-4",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 59.6
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-5",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 59.3
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-6",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 6,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 49.7
+    },
+    {
+      "name": "helios-node-r01-idx03-gpu-7",
+      "node": "helios-node-r01-idx03",
+      "cluster": "helios",
+      "index": 7,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 52.8
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-0",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 55.8
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-1",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "over",
+      "utilizationPct": 90.4
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-2",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "normal",
+      "utilizationPct": 63.1
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-3",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "mistral-7b-instruct-sft-helios",
+      "band": "over",
+      "utilizationPct": 91.4
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-4",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "over",
+      "utilizationPct": 93.3
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-5",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 5,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-6",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx04-gpu-7",
+      "node": "helios-node-r01-idx04",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-0",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 76.2
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-1",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "over",
+      "utilizationPct": 92.3
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-2",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 54.3
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-3",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 68
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-4",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 60.7
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-5",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 68
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-6",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx05-gpu-7",
+      "node": "helios-node-r01-idx05",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-0",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 50.1
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-1",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-8b-continued-pretrain-helios",
+      "band": "normal",
+      "utilizationPct": 62.2
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-2",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "deepseek-v3-dynamo-sglang-inference-helios",
+      "band": "under",
+      "utilizationPct": 14.6
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-3",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "deepseek-v3-dynamo-sglang-inference-helios",
+      "band": "under",
+      "utilizationPct": 17.3
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-4",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "deepseek-v3-dynamo-sglang-inference-helios",
+      "band": "over",
+      "utilizationPct": 87.9
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-5",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "deepseek-v3-dynamo-sglang-inference-helios",
+      "band": "over",
+      "utilizationPct": 87.2
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-6",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 6,
+      "workload": "deepseek-v3-dynamo-sglang-inference-helios",
+      "band": "over",
+      "utilizationPct": 85.7
+    },
+    {
+      "name": "helios-node-r01-idx06-gpu-7",
+      "node": "helios-node-r01-idx06",
+      "cluster": "helios",
+      "index": 7,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "normal",
+      "utilizationPct": 48.6
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-0",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "under",
+      "utilizationPct": 8.4
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-1",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "under",
+      "utilizationPct": 8.4
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-2",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "over",
+      "utilizationPct": 89.3
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-3",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "under",
+      "utilizationPct": 12.1
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-4",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "under",
+      "utilizationPct": 13.4
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-5",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "band": "under",
+      "utilizationPct": 15.3
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-6",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 6,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-helios",
+      "band": "under",
+      "utilizationPct": 9.1
+    },
+    {
+      "name": "helios-node-r01-idx07-gpu-7",
+      "node": "helios-node-r01-idx07",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-0",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 0,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-helios",
+      "band": "normal",
+      "utilizationPct": 22
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-1",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 1,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-helios",
+      "band": "under",
+      "utilizationPct": 19.9
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-2",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 2,
+      "workload": "mixtral-8x7b-dynamo-service-helios",
+      "band": "under",
+      "utilizationPct": 14
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-3",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 3,
+      "workload": "mixtral-8x7b-dynamo-service-helios",
+      "band": "normal",
+      "utilizationPct": 36.9
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-4",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 4,
+      "workload": "mixtral-8x7b-dynamo-service-helios",
+      "band": "under",
+      "utilizationPct": 15.2
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-5",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 5,
+      "workload": "mixtral-8x7b-dynamo-service-helios",
+      "band": "under",
+      "utilizationPct": 10.8
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-6",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 6,
+      "workload": "mixtral-8x7b-dynamo-service-helios",
+      "band": "under",
+      "utilizationPct": 15.9
+    },
+    {
+      "name": "helios-node-r01-idx08-gpu-7",
+      "node": "helios-node-r01-idx08",
+      "cluster": "helios",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-0",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 67.1
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-1",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 56.1
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-2",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 61
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-3",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 48.9
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-4",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 57.6
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-5",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "over",
+      "utilizationPct": 89.3
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-6",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 55.8
+    },
+    {
+      "name": "atlas-node-r01-idx01-gpu-7",
+      "node": "atlas-node-r01-idx01",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "over",
+      "utilizationPct": 98.2
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-0",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 55.9
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-1",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-atlas",
+      "band": "normal",
+      "utilizationPct": 65.1
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-2",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "band": "under",
+      "utilizationPct": 19.9
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-3",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "band": "under",
+      "utilizationPct": 19.1
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-4",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "band": "under",
+      "utilizationPct": 9.3
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-5",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "band": "under",
+      "utilizationPct": 14.2
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-6",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx02-gpu-7",
+      "node": "atlas-node-r01-idx02",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-0",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "band": "normal",
+      "utilizationPct": 64.4
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-1",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "band": "under",
+      "utilizationPct": 8.6
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-2",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "band": "under",
+      "utilizationPct": 14.6
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-3",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "band": "under",
+      "utilizationPct": 16.6
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-4",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "band": "under",
+      "utilizationPct": 9.4
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-5",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "band": "normal",
+      "utilizationPct": 50
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-6",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx03-gpu-7",
+      "node": "atlas-node-r01-idx03",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-0",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+      "band": "under",
+      "utilizationPct": 15.1
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-1",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+      "band": "normal",
+      "utilizationPct": 32.5
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-2",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+      "band": "under",
+      "utilizationPct": 8.7
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-3",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+      "band": "under",
+      "utilizationPct": 14.3
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-4",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "under",
+      "utilizationPct": 19.9
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-5",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "normal",
+      "utilizationPct": 48.2
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-6",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "under",
+      "utilizationPct": 19.3
+    },
+    {
+      "name": "atlas-node-r01-idx04-gpu-7",
+      "node": "atlas-node-r01-idx04",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-0",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "under",
+      "utilizationPct": 19.9
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-1",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "normal",
+      "utilizationPct": 36.6
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-2",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "mixtral-8x7b-dynamo-service-atlas",
+      "band": "under",
+      "utilizationPct": 15.1
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-3",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": "command-r-plus-dynamo-tgi-api-atlas",
+      "band": "under",
+      "utilizationPct": 10.3
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-4",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": "command-r-plus-dynamo-tgi-api-atlas",
+      "band": "under",
+      "utilizationPct": 14.5
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-5",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": "command-r-plus-dynamo-tgi-api-atlas",
+      "band": "under",
+      "utilizationPct": 16.8
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-6",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": "command-r-plus-dynamo-tgi-api-atlas",
+      "band": "normal",
+      "utilizationPct": 52.2
+    },
+    {
+      "name": "atlas-node-r01-idx05-gpu-7",
+      "node": "atlas-node-r01-idx05",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": "command-r-plus-dynamo-tgi-api-atlas",
+      "band": "under",
+      "utilizationPct": 15.4
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-0",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 0,
+      "workload": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+      "band": "under",
+      "utilizationPct": 15.5
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-1",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 1,
+      "workload": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+      "band": "normal",
+      "utilizationPct": 39.8
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-2",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 2,
+      "workload": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+      "band": "under",
+      "utilizationPct": 19.7
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-3",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 3,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-4",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 4,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-5",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 5,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-6",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "atlas-node-r01-idx06-gpu-7",
+      "node": "atlas-node-r01-idx06",
+      "cluster": "atlas",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-0",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 61.3
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-1",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 61.6
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-2",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 49
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-3",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 3,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "over",
+      "utilizationPct": 89.6
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-4",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 4,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 64.8
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-5",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 5,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 61.6
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-6",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx01-gpu-7",
+      "node": "orion-node-r01-idx01",
+      "cluster": "orion",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-0",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "over",
+      "utilizationPct": 91.7
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-1",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 79
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-2",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 75.8
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-3",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 3,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-4",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 4,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-5",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 5,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-6",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx02-gpu-7",
+      "node": "orion-node-r01-idx02",
+      "cluster": "orion",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-0",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "llama-3-70b-pretrain-orion",
+      "band": "normal",
+      "utilizationPct": 66
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-1",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "over",
+      "utilizationPct": 94.6
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-2",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 64.2
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-3",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 3,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 73.3
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-4",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 4,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "over",
+      "utilizationPct": 93.1
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-5",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 5,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 67.6
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-6",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 6,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 54.6
+    },
+    {
+      "name": "orion-node-r01-idx03-gpu-7",
+      "node": "orion-node-r01-idx03",
+      "cluster": "orion",
+      "index": 7,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 53.2
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-0",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 57
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-1",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "mistral-7b-instruct-sft-orion",
+      "band": "normal",
+      "utilizationPct": 54.8
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-2",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "deepseek-v3-dynamo-sglang-inference-orion",
+      "band": "under",
+      "utilizationPct": 14.9
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-3",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 3,
+      "workload": "deepseek-v3-dynamo-sglang-inference-orion",
+      "band": "under",
+      "utilizationPct": 10.8
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-4",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 4,
+      "workload": "deepseek-v3-dynamo-sglang-inference-orion",
+      "band": "under",
+      "utilizationPct": 13.9
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-5",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 5,
+      "workload": "deepseek-v3-dynamo-sglang-inference-orion",
+      "band": "normal",
+      "utilizationPct": 22
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-6",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 6,
+      "workload": "deepseek-v3-dynamo-sglang-inference-orion",
+      "band": "under",
+      "utilizationPct": 17.7
+    },
+    {
+      "name": "orion-node-r01-idx04-gpu-7",
+      "node": "orion-node-r01-idx04",
+      "cluster": "orion",
+      "index": 7,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-orion",
+      "band": "under",
+      "utilizationPct": 12.2
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-0",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-orion",
+      "band": "normal",
+      "utilizationPct": 48.5
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-1",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "llama-3-405b-dynamo-trtllm-inference-orion",
+      "band": "under",
+      "utilizationPct": 17.4
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-2",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-orion",
+      "band": "under",
+      "utilizationPct": 11.8
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-3",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 3,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-orion",
+      "band": "under",
+      "utilizationPct": 19.9
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-4",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 4,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-orion",
+      "band": "normal",
+      "utilizationPct": 38.1
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-5",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 5,
+      "workload": "qwen2-72b-dynamo-vllm-endpoint-orion",
+      "band": "under",
+      "utilizationPct": 18.9
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-6",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 6,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx05-gpu-7",
+      "node": "orion-node-r01-idx05",
+      "cluster": "orion",
+      "index": 7,
+      "workload": null,
+      "band": "idle",
+      "utilizationPct": 0
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-0",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 0,
+      "workload": "mixtral-8x7b-dynamo-service-orion",
+      "band": "under",
+      "utilizationPct": 14.1
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-1",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 1,
+      "workload": "mixtral-8x7b-dynamo-service-orion",
+      "band": "under",
+      "utilizationPct": 13.4
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-2",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 2,
+      "workload": "mixtral-8x7b-dynamo-service-orion",
+      "band": "normal",
+      "utilizationPct": 73.1
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-3",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 3,
+      "workload": "command-r-plus-dynamo-tgi-api-orion",
+      "band": "under",
+      "utilizationPct": 10.9
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-4",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 4,
+      "workload": "command-r-plus-dynamo-tgi-api-orion",
+      "band": "normal",
+      "utilizationPct": 68.7
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-5",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 5,
+      "workload": "command-r-plus-dynamo-tgi-api-orion",
+      "band": "under",
+      "utilizationPct": 12.2
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-6",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 6,
+      "workload": "gemma-2-27b-dynamo-ray-serve-inference-orion",
+      "band": "normal",
+      "utilizationPct": 30.6
+    },
+    {
+      "name": "orion-node-r01-idx06-gpu-7",
+      "node": "orion-node-r01-idx06",
+      "cluster": "orion",
+      "index": 7,
+      "workload": "gemma-2-27b-dynamo-ray-serve-inference-orion",
+      "band": "under",
+      "utilizationPct": 7.9
+    }
+  ],
+  "workloads": [
+    {
+      "id": "e5aa6d86f5d024f9cfaf4168",
+      "name": "llama-3-70b-pretrain-helios",
+      "kind": "TRAINING_JOB",
+      "cluster": "helios",
+      "gpuCount": 12,
+      "gpus": [
+        "helios-node-r01-idx01-gpu-0",
+        "helios-node-r01-idx01-gpu-1",
+        "helios-node-r01-idx01-gpu-2",
+        "helios-node-r01-idx02-gpu-0",
+        "helios-node-r01-idx02-gpu-1",
+        "helios-node-r01-idx02-gpu-2",
+        "helios-node-r01-idx02-gpu-3",
+        "helios-node-r01-idx02-gpu-4",
+        "helios-node-r01-idx02-gpu-5",
+        "helios-node-r01-idx02-gpu-6",
+        "helios-node-r01-idx03-gpu-0",
+        "helios-node-r01-idx03-gpu-1"
+      ]
+    },
+    {
+      "id": "ac0fe0f40cef5f2c968ecfea",
+      "name": "mistral-7b-instruct-sft-helios",
+      "kind": "TRAINING_JOB",
+      "cluster": "helios",
+      "gpuCount": 10,
+      "gpus": [
+        "helios-node-r01-idx03-gpu-2",
+        "helios-node-r01-idx03-gpu-3",
+        "helios-node-r01-idx03-gpu-4",
+        "helios-node-r01-idx03-gpu-5",
+        "helios-node-r01-idx03-gpu-6",
+        "helios-node-r01-idx03-gpu-7",
+        "helios-node-r01-idx04-gpu-0",
+        "helios-node-r01-idx04-gpu-1",
+        "helios-node-r01-idx04-gpu-2",
+        "helios-node-r01-idx04-gpu-3"
+      ]
+    },
+    {
+      "id": "bc2c67498b3c74a642df7c39",
+      "name": "llama-3-8b-continued-pretrain-helios",
+      "kind": "TRAINING_JOB",
+      "cluster": "helios",
+      "gpuCount": 9,
+      "gpus": [
+        "helios-node-r01-idx04-gpu-4",
+        "helios-node-r01-idx05-gpu-0",
+        "helios-node-r01-idx05-gpu-1",
+        "helios-node-r01-idx05-gpu-2",
+        "helios-node-r01-idx05-gpu-3",
+        "helios-node-r01-idx05-gpu-4",
+        "helios-node-r01-idx05-gpu-5",
+        "helios-node-r01-idx06-gpu-0",
+        "helios-node-r01-idx06-gpu-1"
+      ]
+    },
+    {
+      "id": "7355d9072cd98b5b15beeba8",
+      "name": "deepseek-v3-dynamo-sglang-inference-helios",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "helios",
+      "gpuCount": 5,
+      "gpus": [
+        "helios-node-r01-idx06-gpu-2",
+        "helios-node-r01-idx06-gpu-3",
+        "helios-node-r01-idx06-gpu-4",
+        "helios-node-r01-idx06-gpu-5",
+        "helios-node-r01-idx06-gpu-6"
+      ]
+    },
+    {
+      "id": "213e161c7678e70737e4cd55",
+      "name": "llama-3-405b-dynamo-trtllm-inference-helios",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "helios",
+      "gpuCount": 7,
+      "gpus": [
+        "helios-node-r01-idx06-gpu-7",
+        "helios-node-r01-idx07-gpu-0",
+        "helios-node-r01-idx07-gpu-1",
+        "helios-node-r01-idx07-gpu-2",
+        "helios-node-r01-idx07-gpu-3",
+        "helios-node-r01-idx07-gpu-4",
+        "helios-node-r01-idx07-gpu-5"
+      ]
+    },
+    {
+      "id": "082ff6eee57f5e829224f6bd",
+      "name": "qwen2-72b-dynamo-vllm-endpoint-helios",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "helios",
+      "gpuCount": 3,
+      "gpus": [
+        "helios-node-r01-idx07-gpu-6",
+        "helios-node-r01-idx08-gpu-0",
+        "helios-node-r01-idx08-gpu-1"
+      ]
+    },
+    {
+      "id": "3aa2653647501f59710d2e69",
+      "name": "mixtral-8x7b-dynamo-service-helios",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "helios",
+      "gpuCount": 5,
+      "gpus": [
+        "helios-node-r01-idx08-gpu-2",
+        "helios-node-r01-idx08-gpu-3",
+        "helios-node-r01-idx08-gpu-4",
+        "helios-node-r01-idx08-gpu-5",
+        "helios-node-r01-idx08-gpu-6"
+      ]
+    },
+    {
+      "id": "0f8d2572c66bf5abc7e17b6a",
+      "name": "llama-3-70b-pretrain-atlas",
+      "kind": "TRAINING_JOB",
+      "cluster": "atlas",
+      "gpuCount": 10,
+      "gpus": [
+        "atlas-node-r01-idx01-gpu-0",
+        "atlas-node-r01-idx01-gpu-1",
+        "atlas-node-r01-idx01-gpu-2",
+        "atlas-node-r01-idx01-gpu-3",
+        "atlas-node-r01-idx01-gpu-4",
+        "atlas-node-r01-idx01-gpu-5",
+        "atlas-node-r01-idx01-gpu-6",
+        "atlas-node-r01-idx01-gpu-7",
+        "atlas-node-r01-idx02-gpu-0",
+        "atlas-node-r01-idx02-gpu-1"
+      ]
+    },
+    {
+      "id": "0e8612e9f1888d23fef708c8",
+      "name": "deepseek-v3-dynamo-sglang-inference-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 5,
+      "gpus": [
+        "atlas-node-r01-idx02-gpu-2",
+        "atlas-node-r01-idx02-gpu-3",
+        "atlas-node-r01-idx02-gpu-4",
+        "atlas-node-r01-idx02-gpu-5",
+        "atlas-node-r01-idx03-gpu-0"
+      ]
+    },
+    {
+      "id": "60f6582944103ca597e71c48",
+      "name": "llama-3-405b-dynamo-trtllm-inference-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 5,
+      "gpus": [
+        "atlas-node-r01-idx03-gpu-1",
+        "atlas-node-r01-idx03-gpu-2",
+        "atlas-node-r01-idx03-gpu-3",
+        "atlas-node-r01-idx03-gpu-4",
+        "atlas-node-r01-idx03-gpu-5"
+      ]
+    },
+    {
+      "id": "2ca7c061b6028d6838793884",
+      "name": "qwen2-72b-dynamo-vllm-endpoint-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 4,
+      "gpus": [
+        "atlas-node-r01-idx04-gpu-0",
+        "atlas-node-r01-idx04-gpu-1",
+        "atlas-node-r01-idx04-gpu-2",
+        "atlas-node-r01-idx04-gpu-3"
+      ]
+    },
+    {
+      "id": "58909aab8cfd7f224aa42665",
+      "name": "mixtral-8x7b-dynamo-service-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 6,
+      "gpus": [
+        "atlas-node-r01-idx04-gpu-4",
+        "atlas-node-r01-idx04-gpu-5",
+        "atlas-node-r01-idx04-gpu-6",
+        "atlas-node-r01-idx05-gpu-0",
+        "atlas-node-r01-idx05-gpu-1",
+        "atlas-node-r01-idx05-gpu-2"
+      ]
+    },
+    {
+      "id": "e9e4a1be52d907e71f73914d",
+      "name": "command-r-plus-dynamo-tgi-api-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 5,
+      "gpus": [
+        "atlas-node-r01-idx05-gpu-3",
+        "atlas-node-r01-idx05-gpu-4",
+        "atlas-node-r01-idx05-gpu-5",
+        "atlas-node-r01-idx05-gpu-6",
+        "atlas-node-r01-idx05-gpu-7"
+      ]
+    },
+    {
+      "id": "076889155f1d2a2ec0b6259a",
+      "name": "gemma-2-27b-dynamo-ray-serve-inference-atlas",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "atlas",
+      "gpuCount": 3,
+      "gpus": [
+        "atlas-node-r01-idx06-gpu-0",
+        "atlas-node-r01-idx06-gpu-1",
+        "atlas-node-r01-idx06-gpu-2"
+      ]
+    },
+    {
+      "id": "d3031a7e4d9b0fc770ce8c41",
+      "name": "llama-3-70b-pretrain-orion",
+      "kind": "TRAINING_JOB",
+      "cluster": "orion",
+      "gpuCount": 10,
+      "gpus": [
+        "orion-node-r01-idx01-gpu-0",
+        "orion-node-r01-idx01-gpu-1",
+        "orion-node-r01-idx01-gpu-2",
+        "orion-node-r01-idx01-gpu-3",
+        "orion-node-r01-idx01-gpu-4",
+        "orion-node-r01-idx01-gpu-5",
+        "orion-node-r01-idx02-gpu-0",
+        "orion-node-r01-idx02-gpu-1",
+        "orion-node-r01-idx02-gpu-2",
+        "orion-node-r01-idx03-gpu-0"
+      ]
+    },
+    {
+      "id": "b7328c9676969dc59d0b88dd",
+      "name": "mistral-7b-instruct-sft-orion",
+      "kind": "TRAINING_JOB",
+      "cluster": "orion",
+      "gpuCount": 9,
+      "gpus": [
+        "orion-node-r01-idx03-gpu-1",
+        "orion-node-r01-idx03-gpu-2",
+        "orion-node-r01-idx03-gpu-3",
+        "orion-node-r01-idx03-gpu-4",
+        "orion-node-r01-idx03-gpu-5",
+        "orion-node-r01-idx03-gpu-6",
+        "orion-node-r01-idx03-gpu-7",
+        "orion-node-r01-idx04-gpu-0",
+        "orion-node-r01-idx04-gpu-1"
+      ]
+    },
+    {
+      "id": "c5f6ac66f0ba6a9cd3a51ddb",
+      "name": "deepseek-v3-dynamo-sglang-inference-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 5,
+      "gpus": [
+        "orion-node-r01-idx04-gpu-2",
+        "orion-node-r01-idx04-gpu-3",
+        "orion-node-r01-idx04-gpu-4",
+        "orion-node-r01-idx04-gpu-5",
+        "orion-node-r01-idx04-gpu-6"
+      ]
+    },
+    {
+      "id": "1b7e072a65182307a3204f66",
+      "name": "llama-3-405b-dynamo-trtllm-inference-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 3,
+      "gpus": [
+        "orion-node-r01-idx04-gpu-7",
+        "orion-node-r01-idx05-gpu-0",
+        "orion-node-r01-idx05-gpu-1"
+      ]
+    },
+    {
+      "id": "a67e96a4db24ae900a5377ce",
+      "name": "qwen2-72b-dynamo-vllm-endpoint-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 4,
+      "gpus": [
+        "orion-node-r01-idx05-gpu-2",
+        "orion-node-r01-idx05-gpu-3",
+        "orion-node-r01-idx05-gpu-4",
+        "orion-node-r01-idx05-gpu-5"
+      ]
+    },
+    {
+      "id": "c1c1f341903376e5be56c8ce",
+      "name": "mixtral-8x7b-dynamo-service-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 3,
+      "gpus": [
+        "orion-node-r01-idx06-gpu-0",
+        "orion-node-r01-idx06-gpu-1",
+        "orion-node-r01-idx06-gpu-2"
+      ]
+    },
+    {
+      "id": "3a463745e8263601590b5b74",
+      "name": "command-r-plus-dynamo-tgi-api-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 3,
+      "gpus": [
+        "orion-node-r01-idx06-gpu-3",
+        "orion-node-r01-idx06-gpu-4",
+        "orion-node-r01-idx06-gpu-5"
+      ]
+    },
+    {
+      "id": "d9dce2e49aab13b5b86bea2c",
+      "name": "gemma-2-27b-dynamo-ray-serve-inference-orion",
+      "kind": "INFERENCE_SERVICE",
+      "cluster": "orion",
+      "gpuCount": 2,
+      "gpus": [
+        "orion-node-r01-idx06-gpu-6",
+        "orion-node-r01-idx06-gpu-7"
+      ]
+    }
+  ],
+  "storage": [
+    {
+      "name": "helios-shared",
+      "cluster": "helios",
+      "kind": "shared",
+      "node": null,
+      "fsType": "lustre",
+      "capacityGib": 409600,
+      "usedGib": 188027.5,
+      "utilPct": 45.9
+    },
+    {
+      "name": "atlas-node-r01-idx01-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx01",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1307.3,
+      "utilPct": 31.9
+    },
+    {
+      "name": "atlas-node-r01-idx02-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx02",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1448.1,
+      "utilPct": 35.4
+    },
+    {
+      "name": "atlas-node-r01-idx03-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx03",
+      "fsType": "nvme",
+      "capacityGib": 2048,
+      "usedGib": 1109.6,
+      "utilPct": 54.2
+    },
+    {
+      "name": "atlas-node-r01-idx04-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx04",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1276.7,
+      "utilPct": 31.2
+    },
+    {
+      "name": "atlas-node-r01-idx05-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx05",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 2376.7,
+      "utilPct": 58
+    },
+    {
+      "name": "atlas-node-r01-idx06-scratch",
+      "cluster": "atlas",
+      "kind": "scratch",
+      "node": "atlas-node-r01-idx06",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1907.4,
+      "utilPct": 46.6
+    },
+    {
+      "name": "orion-node-r01-idx01-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx01",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1534,
+      "utilPct": 37.5
+    },
+    {
+      "name": "orion-node-r01-idx02-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx02",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 2445.9,
+      "utilPct": 59.7
+    },
+    {
+      "name": "orion-node-r01-idx03-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx03",
+      "fsType": "nvme",
+      "capacityGib": 2048,
+      "usedGib": 1270.9,
+      "utilPct": 62.1
+    },
+    {
+      "name": "orion-node-r01-idx04-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx04",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1929.6,
+      "utilPct": 47.1
+    },
+    {
+      "name": "orion-node-r01-idx05-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx05",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 2627.5,
+      "utilPct": 64.1
+    },
+    {
+      "name": "orion-node-r01-idx06-scratch",
+      "cluster": "orion",
+      "kind": "scratch",
+      "node": "orion-node-r01-idx06",
+      "fsType": "nvme",
+      "capacityGib": 4096,
+      "usedGib": 1880.6,
+      "utilPct": 45.9
+    }
+  ]
+}

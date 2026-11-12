@@ -1,0 +1,325 @@
+{
+  "total_gpus": 160,
+  "clusters": [
+    {
+      "name": "helios",
+      "kind": "slurm",
+      "nodes": 8,
+      "nodesAsked": [
+        8,
+        8
+      ],
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "ranges": {
+        "temperatureC": {
+          "idle": [
+            28.0,
+            38.0
+          ],
+          "busy": [
+            40.0,
+            83.0
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68.0,
+            94.0
+          ],
+          "busy": [
+            98.0,
+            700.0
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5.0
+          ],
+          "busy": [
+            45.0,
+            90.0
+          ]
+        }
+      },
+      "workloads": {
+        "TRAINING_JOB": 3,
+        "INFERENCE_SERVICE": 4
+      },
+      "workloadsAsked": {
+        "TRAINING_JOB": [
+          1,
+          3
+        ],
+        "INFERENCE_SERVICE": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "atlas",
+      "kind": "k8s",
+      "nodes": 6,
+      "nodesAsked": [
+        6,
+        6
+      ],
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "ranges": {
+        "temperatureC": {
+          "idle": [
+            28.0,
+            38.0
+          ],
+          "busy": [
+            40.0,
+            83.0
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68.0,
+            94.0
+          ],
+          "busy": [
+            98.0,
+            700.0
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5.0
+          ],
+          "busy": [
+            45.0,
+            90.0
+          ]
+        }
+      },
+      "workloads": {
+        "TRAINING_JOB": 1,
+        "INFERENCE_SERVICE": 6
+      },
+      "workloadsAsked": {
+        "TRAINING_JOB": [
+          0,
+          3
+        ],
+        "INFERENCE_SERVICE": [
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "name": "orion",
+      "kind": "k8s",
+      "nodes": 6,
+      "nodesAsked": [
+        6,
+        6
+      ],
+      "gpu": {
+        "model": "NVIDIA H200 141GB HBM3e",
+        "memoryMib": 144384,
+        "gpusPerNode": 8,
+        "priceCentsPerHour": 399,
+        "idlePowerW": 75,
+        "maxPowerW": 700,
+        "cooling": "air",
+        "type": "H200"
+      },
+      "ranges": {
+        "temperatureC": {
+          "idle": [
+            28.0,
+            38.0
+          ],
+          "busy": [
+            40.0,
+            83.0
+          ]
+        },
+        "powerW": {
+          "idle": [
+            68.0,
+            94.0
+          ],
+          "busy": [
+            98.0,
+            700.0
+          ]
+        },
+        "memoryUsedPct": {
+          "idle": [
+            1.5,
+            5.0
+          ],
+          "busy": [
+            45.0,
+            90.0
+          ]
+        }
+      },
+      "workloads": {
+        "TRAINING_JOB": 2,
+        "INFERENCE_SERVICE": 6
+      },
+      "workloadsAsked": {
+        "TRAINING_JOB": [
+          0,
+          3
+        ],
+        "INFERENCE_SERVICE": [
+          5,
+          8
+        ]
+      }
+    }
+  ],
+  "workloads": {
+    "llama-3-70b-pretrain-helios": [
+      "helios",
+      "TRAINING_JOB",
+      12
+    ],
+    "mistral-7b-instruct-sft-helios": [
+      "helios",
+      "TRAINING_JOB",
+      10
+    ],
+    "llama-3-8b-continued-pretrain-helios": [
+      "helios",
+      "TRAINING_JOB",
+      9
+    ],
+    "llama-3-70b-pretrain-atlas": [
+      "atlas",
+      "TRAINING_JOB",
+      10
+    ],
+    "llama-3-70b-pretrain-orion": [
+      "orion",
+      "TRAINING_JOB",
+      10
+    ],
+    "mistral-7b-instruct-sft-orion": [
+      "orion",
+      "TRAINING_JOB",
+      9
+    ],
+    "deepseek-v3-dynamo-sglang-inference-helios": [
+      "helios",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "llama-3-405b-dynamo-trtllm-inference-helios": [
+      "helios",
+      "INFERENCE_SERVICE",
+      7
+    ],
+    "qwen2-72b-dynamo-vllm-endpoint-helios": [
+      "helios",
+      "INFERENCE_SERVICE",
+      3
+    ],
+    "mixtral-8x7b-dynamo-service-helios": [
+      "helios",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "deepseek-v3-dynamo-sglang-inference-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "llama-3-405b-dynamo-trtllm-inference-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "qwen2-72b-dynamo-vllm-endpoint-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      4
+    ],
+    "mixtral-8x7b-dynamo-service-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      6
+    ],
+    "command-r-plus-dynamo-tgi-api-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "gemma-2-27b-dynamo-ray-serve-inference-atlas": [
+      "atlas",
+      "INFERENCE_SERVICE",
+      3
+    ],
+    "deepseek-v3-dynamo-sglang-inference-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      5
+    ],
+    "llama-3-405b-dynamo-trtllm-inference-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      3
+    ],
+    "qwen2-72b-dynamo-vllm-endpoint-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      4
+    ],
+    "mixtral-8x7b-dynamo-service-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      3
+    ],
+    "command-r-plus-dynamo-tgi-api-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      3
+    ],
+    "gemma-2-27b-dynamo-ray-serve-inference-orion": [
+      "orion",
+      "INFERENCE_SERVICE",
+      2
+    ]
+  },
+  "bands": {
+    "idle": 32,
+    "under": 48,
+    "normal": 64,
+    "over": 16
+  },
+  "health": {},
+  "overridden": {},
+  "fleetRangePct": null,
+  "storageRangePct": [
+    42.0,
+    50.0
+  ]
+}
