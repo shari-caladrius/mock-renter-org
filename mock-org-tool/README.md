@@ -10,8 +10,8 @@ gpu_catalog.json          GPU types (H100, H200, B200, B300, GB200, GB300, A100,
 engine/                   data generator (renter_engine.py, health_catalog.py, reference/ = key-shape references)
 requests/                 input files
 tests/test_renter.py      python tests/test_renter.py  (upload test runs when mongomock is installed)
-STATIC_REMOVAL_CHECKLIST.md
-.env                      kubectl port-forward + credential commands (never commit)
+
+
 orgs/renter/<slug>/       output of the last run: generated/, mongo/ (JSON per collection), SUMMARY.md
 ```
 
